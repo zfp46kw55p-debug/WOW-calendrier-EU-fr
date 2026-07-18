@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+      
+    paths:
+      - "data/**/*.json"
+      - "scripts/**/*.py"
+      - ".github/workflows/build.yml"
 
   workflow_dispatch:
 
