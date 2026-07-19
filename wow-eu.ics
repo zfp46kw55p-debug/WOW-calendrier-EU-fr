@@ -6,8 +6,17 @@ METHOD:PUBLISH
 X-WR-CALNAME:WoW Retail EU FR
 X-WR-TIMEZONE:Europe/Zurich
 BEGIN:VEVENT
+UID:trading-post-202601
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-01
+DTSTART;VALUE=DATE:20260101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20260104
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260104
 DTEND;VALUE=DATE:20260111
@@ -17,7 +26,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20260201
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260201
 DTEND;VALUE=DATE:20260208
@@ -26,8 +35,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202602
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-02
+DTSTART;VALUE=DATE:20260201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20260301
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260301
 DTEND;VALUE=DATE:20260308
@@ -36,8 +54,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202603
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-03
+DTSTART;VALUE=DATE:20260301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-202604
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-04
+DTSTART;VALUE=DATE:20260401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20260405
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260405
 DTEND;VALUE=DATE:20260412
@@ -46,8 +82,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202605
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-05
+DTSTART;VALUE=DATE:20260501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20260503
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260503
 DTEND;VALUE=DATE:20260510
@@ -56,8 +101,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202606
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-06
+DTSTART;VALUE=DATE:20260601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20260607
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260607
 DTEND;VALUE=DATE:20260614
@@ -66,8 +120,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202607
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-07
+DTSTART;VALUE=DATE:20260701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20260705
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260705
 DTEND;VALUE=DATE:20260712
@@ -77,7 +140,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:weekly-reset-eu
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:Réinitialisation hebdomadaire
 DTSTART;VALUE=DATE:20260722
 RRULE:FREQ=WEEKLY;BYDAY=WE
@@ -85,17 +148,17 @@ DESCRIPTION:Réinitialisation hebdomadaire des royaumes européens.
 CATEGORIES:Réinitialisation
 END:VEVENT
 BEGIN:VEVENT
-UID:tp-2026-08
-DTSTAMP:20260719T162752Z
-SUMMARY:💰 Trading Post - Août
+UID:trading-post-202608
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-08
 DTSTART;VALUE=DATE:20260801
-DTEND;VALUE=DATE:20260901
-DESCRIPTION:Comptoir disponible pendant le mois d'août.
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Trading Post
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20260802
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260802
 DTEND;VALUE=DATE:20260809
@@ -105,7 +168,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:tw-burning-crusade-2026-08
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:⚔️ TW - Burning Crusade
 DTSTART;VALUE=DATE:20260805
 DTEND;VALUE=DATE:20260812
@@ -114,7 +177,7 @@ CATEGORIES:Marcheurs du temps\,Burning Crusade
 END:VEVENT
 BEGIN:VEVENT
 UID:tw-wrath-2026-08
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:⚔️ TW - Wrath of the Lich King
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260902
@@ -122,8 +185,17 @@ DESCRIPTION:Marcheurs du temps : Wrath of the Lich King.
 CATEGORIES:Marcheurs du temps\,Wrath
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202609
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-09
+DTSTART;VALUE=DATE:20260901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20260906
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20260906
 DTEND;VALUE=DATE:20260913
@@ -132,8 +204,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202610
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-10
+DTSTART;VALUE=DATE:20261001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20261004
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261011
@@ -143,7 +224,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20261101
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261108
@@ -152,8 +233,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202611
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-11
+DTSTART;VALUE=DATE:20261101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-202612
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2026-12
+DTSTART;VALUE=DATE:20261201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20261206
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261213
@@ -162,8 +261,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202701
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-01
+DTSTART;VALUE=DATE:20270101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20270103
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270103
 DTEND;VALUE=DATE:20270110
@@ -172,8 +280,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202702
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-02
+DTSTART;VALUE=DATE:20270201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20270207
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270207
 DTEND;VALUE=DATE:20270214
@@ -182,8 +299,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202703
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-03
+DTSTART;VALUE=DATE:20270301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20270307
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270307
 DTEND;VALUE=DATE:20270314
@@ -192,8 +318,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202704
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-04
+DTSTART;VALUE=DATE:20270401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20270404
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270411
@@ -202,8 +337,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202705
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-05
+DTSTART;VALUE=DATE:20270501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20270502
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270509
@@ -212,8 +356,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202706
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-06
+DTSTART;VALUE=DATE:20270601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20270606
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270606
 DTEND;VALUE=DATE:20270613
@@ -222,8 +375,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202707
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-07
+DTSTART;VALUE=DATE:20270701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20270704
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270704
 DTEND;VALUE=DATE:20270711
@@ -233,7 +395,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20270801
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270808
@@ -242,8 +404,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202708
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-08
+DTSTART;VALUE=DATE:20270801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-202709
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-09
+DTSTART;VALUE=DATE:20270901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20270905
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20270905
 DTEND;VALUE=DATE:20270912
@@ -252,8 +432,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202710
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-10
+DTSTART;VALUE=DATE:20271001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20271003
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20271003
 DTEND;VALUE=DATE:20271010
@@ -262,8 +451,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202711
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-11
+DTSTART;VALUE=DATE:20271101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20271107
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20271107
 DTEND;VALUE=DATE:20271114
@@ -272,8 +470,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202712
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2027-12
+DTSTART;VALUE=DATE:20271201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20271205
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20271205
 DTEND;VALUE=DATE:20271212
@@ -282,8 +489,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202801
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-01
+DTSTART;VALUE=DATE:20280101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280102
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280102
 DTEND;VALUE=DATE:20280109
@@ -292,8 +508,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202802
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-02
+DTSTART;VALUE=DATE:20280201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280206
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280206
 DTEND;VALUE=DATE:20280213
@@ -302,8 +527,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202803
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-03
+DTSTART;VALUE=DATE:20280301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280305
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280305
 DTEND;VALUE=DATE:20280312
@@ -312,8 +546,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202804
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-04
+DTSTART;VALUE=DATE:20280401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280402
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280402
 DTEND;VALUE=DATE:20280409
@@ -322,8 +565,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202805
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-05
+DTSTART;VALUE=DATE:20280501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280507
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280507
 DTEND;VALUE=DATE:20280514
@@ -332,8 +584,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202806
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-06
+DTSTART;VALUE=DATE:20280601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280604
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280604
 DTEND;VALUE=DATE:20280611
@@ -342,8 +603,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202807
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-07
+DTSTART;VALUE=DATE:20280701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280702
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280702
 DTEND;VALUE=DATE:20280709
@@ -352,8 +622,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202808
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-08
+DTSTART;VALUE=DATE:20280801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280806
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280806
 DTEND;VALUE=DATE:20280813
@@ -362,8 +641,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202809
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-09
+DTSTART;VALUE=DATE:20280901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20280903
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20280903
 DTEND;VALUE=DATE:20280910
@@ -373,7 +661,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20281001
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20281001
 DTEND;VALUE=DATE:20281008
@@ -382,8 +670,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202810
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-10
+DTSTART;VALUE=DATE:20281001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-202811
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-11
+DTSTART;VALUE=DATE:20281101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20281105
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20281105
 DTEND;VALUE=DATE:20281112
@@ -392,8 +698,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202812
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2028-12
+DTSTART;VALUE=DATE:20281201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20281203
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20281203
 DTEND;VALUE=DATE:20281210
@@ -402,8 +717,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202901
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-01
+DTSTART;VALUE=DATE:20290101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20290107
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290107
 DTEND;VALUE=DATE:20290114
@@ -412,8 +736,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202902
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-02
+DTSTART;VALUE=DATE:20290201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20290204
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290204
 DTEND;VALUE=DATE:20290211
@@ -422,8 +755,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202903
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-03
+DTSTART;VALUE=DATE:20290301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20290304
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290304
 DTEND;VALUE=DATE:20290311
@@ -433,7 +775,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20290401
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290401
 DTEND;VALUE=DATE:20290408
@@ -442,8 +784,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202904
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-04
+DTSTART;VALUE=DATE:20290401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-202905
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-05
+DTSTART;VALUE=DATE:20290501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20290506
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290506
 DTEND;VALUE=DATE:20290513
@@ -452,8 +812,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202906
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-06
+DTSTART;VALUE=DATE:20290601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20290603
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290603
 DTEND;VALUE=DATE:20290610
@@ -463,7 +832,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20290701
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290701
 DTEND;VALUE=DATE:20290708
@@ -472,8 +841,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202907
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-07
+DTSTART;VALUE=DATE:20290701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-202908
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-08
+DTSTART;VALUE=DATE:20290801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20290805
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290805
 DTEND;VALUE=DATE:20290812
@@ -482,8 +869,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202909
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-09
+DTSTART;VALUE=DATE:20290901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20290902
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20290902
 DTEND;VALUE=DATE:20290909
@@ -492,8 +888,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202910
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-10
+DTSTART;VALUE=DATE:20291001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20291007
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20291007
 DTEND;VALUE=DATE:20291014
@@ -502,8 +907,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202911
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-11
+DTSTART;VALUE=DATE:20291101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20291104
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20291104
 DTEND;VALUE=DATE:20291111
@@ -512,8 +926,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-202912
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2029-12
+DTSTART;VALUE=DATE:20291201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20291202
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20291202
 DTEND;VALUE=DATE:20291209
@@ -522,8 +945,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203001
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-01
+DTSTART;VALUE=DATE:20300101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20300106
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300106
 DTEND;VALUE=DATE:20300113
@@ -532,8 +964,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203002
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-02
+DTSTART;VALUE=DATE:20300201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20300203
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300203
 DTEND;VALUE=DATE:20300210
@@ -542,8 +983,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203003
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-03
+DTSTART;VALUE=DATE:20300301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20300303
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300303
 DTEND;VALUE=DATE:20300310
@@ -552,8 +1002,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203004
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-04
+DTSTART;VALUE=DATE:20300401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20300407
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300407
 DTEND;VALUE=DATE:20300414
@@ -562,8 +1021,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203005
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-05
+DTSTART;VALUE=DATE:20300501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20300505
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300505
 DTEND;VALUE=DATE:20300512
@@ -572,8 +1040,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203006
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-06
+DTSTART;VALUE=DATE:20300601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20300602
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300602
 DTEND;VALUE=DATE:20300609
@@ -582,8 +1059,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203007
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-07
+DTSTART;VALUE=DATE:20300701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20300707
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300707
 DTEND;VALUE=DATE:20300714
@@ -592,8 +1078,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203008
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-08
+DTSTART;VALUE=DATE:20300801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20300804
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300804
 DTEND;VALUE=DATE:20300811
@@ -603,7 +1098,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20300901
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20300901
 DTEND;VALUE=DATE:20300908
@@ -612,8 +1107,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203009
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-09
+DTSTART;VALUE=DATE:20300901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203010
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-10
+DTSTART;VALUE=DATE:20301001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20301006
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20301006
 DTEND;VALUE=DATE:20301013
@@ -622,8 +1135,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203011
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-11
+DTSTART;VALUE=DATE:20301101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20301103
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20301103
 DTEND;VALUE=DATE:20301110
@@ -633,7 +1155,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20301201
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20301201
 DTEND;VALUE=DATE:20301208
@@ -642,8 +1164,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203012
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2030-12
+DTSTART;VALUE=DATE:20301201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203101
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-01
+DTSTART;VALUE=DATE:20310101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20310105
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310105
 DTEND;VALUE=DATE:20310112
@@ -652,8 +1192,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203102
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-02
+DTSTART;VALUE=DATE:20310201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20310202
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310202
 DTEND;VALUE=DATE:20310209
@@ -662,8 +1211,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203103
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-03
+DTSTART;VALUE=DATE:20310301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20310302
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310302
 DTEND;VALUE=DATE:20310309
@@ -672,8 +1230,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203104
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-04
+DTSTART;VALUE=DATE:20310401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20310406
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310406
 DTEND;VALUE=DATE:20310413
@@ -682,8 +1249,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203105
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-05
+DTSTART;VALUE=DATE:20310501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20310504
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310504
 DTEND;VALUE=DATE:20310511
@@ -693,7 +1269,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20310601
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310601
 DTEND;VALUE=DATE:20310608
@@ -702,8 +1278,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203106
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-06
+DTSTART;VALUE=DATE:20310601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203107
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-07
+DTSTART;VALUE=DATE:20310701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20310706
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310706
 DTEND;VALUE=DATE:20310713
@@ -712,8 +1306,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203108
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-08
+DTSTART;VALUE=DATE:20310801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20310803
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310803
 DTEND;VALUE=DATE:20310810
@@ -722,8 +1325,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203109
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-09
+DTSTART;VALUE=DATE:20310901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20310907
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20310907
 DTEND;VALUE=DATE:20310914
@@ -732,8 +1344,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203110
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-10
+DTSTART;VALUE=DATE:20311001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20311005
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20311005
 DTEND;VALUE=DATE:20311012
@@ -742,8 +1363,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203111
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-11
+DTSTART;VALUE=DATE:20311101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20311102
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20311102
 DTEND;VALUE=DATE:20311109
@@ -752,8 +1382,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203112
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2031-12
+DTSTART;VALUE=DATE:20311201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20311207
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20311207
 DTEND;VALUE=DATE:20311214
@@ -762,8 +1401,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203201
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-01
+DTSTART;VALUE=DATE:20320101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20320104
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320104
 DTEND;VALUE=DATE:20320111
@@ -773,7 +1421,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20320201
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320201
 DTEND;VALUE=DATE:20320208
@@ -782,8 +1430,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203202
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-02
+DTSTART;VALUE=DATE:20320201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203203
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-03
+DTSTART;VALUE=DATE:20320301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20320307
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320307
 DTEND;VALUE=DATE:20320314
@@ -792,8 +1458,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203204
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-04
+DTSTART;VALUE=DATE:20320401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20320404
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320404
 DTEND;VALUE=DATE:20320411
@@ -802,8 +1477,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203205
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-05
+DTSTART;VALUE=DATE:20320501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20320502
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320502
 DTEND;VALUE=DATE:20320509
@@ -812,8 +1496,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203206
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-06
+DTSTART;VALUE=DATE:20320601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20320606
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320606
 DTEND;VALUE=DATE:20320613
@@ -822,8 +1515,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203207
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-07
+DTSTART;VALUE=DATE:20320701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20320704
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320704
 DTEND;VALUE=DATE:20320711
@@ -833,7 +1535,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20320801
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320801
 DTEND;VALUE=DATE:20320808
@@ -842,8 +1544,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203208
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-08
+DTSTART;VALUE=DATE:20320801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203209
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-09
+DTSTART;VALUE=DATE:20320901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20320905
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20320905
 DTEND;VALUE=DATE:20320912
@@ -852,8 +1572,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203210
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-10
+DTSTART;VALUE=DATE:20321001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20321003
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20321003
 DTEND;VALUE=DATE:20321010
@@ -862,8 +1591,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203211
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-11
+DTSTART;VALUE=DATE:20321101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20321107
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20321107
 DTEND;VALUE=DATE:20321114
@@ -872,8 +1610,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203212
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2032-12
+DTSTART;VALUE=DATE:20321201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20321205
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20321205
 DTEND;VALUE=DATE:20321212
@@ -882,8 +1629,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203301
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-01
+DTSTART;VALUE=DATE:20330101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20330102
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330102
 DTEND;VALUE=DATE:20330109
@@ -892,8 +1648,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203302
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-02
+DTSTART;VALUE=DATE:20330201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20330206
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330206
 DTEND;VALUE=DATE:20330213
@@ -902,8 +1667,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203303
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-03
+DTSTART;VALUE=DATE:20330301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20330306
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330306
 DTEND;VALUE=DATE:20330313
@@ -912,8 +1686,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203304
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-04
+DTSTART;VALUE=DATE:20330401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20330403
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330403
 DTEND;VALUE=DATE:20330410
@@ -923,7 +1706,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20330501
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330501
 DTEND;VALUE=DATE:20330508
@@ -932,8 +1715,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203305
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-05
+DTSTART;VALUE=DATE:20330501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203306
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-06
+DTSTART;VALUE=DATE:20330601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20330605
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330605
 DTEND;VALUE=DATE:20330612
@@ -942,8 +1743,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203307
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-07
+DTSTART;VALUE=DATE:20330701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20330703
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330703
 DTEND;VALUE=DATE:20330710
@@ -952,8 +1762,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203308
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-08
+DTSTART;VALUE=DATE:20330801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20330807
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330807
 DTEND;VALUE=DATE:20330814
@@ -962,8 +1781,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203309
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-09
+DTSTART;VALUE=DATE:20330901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20330904
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20330904
 DTEND;VALUE=DATE:20330911
@@ -972,8 +1800,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203310
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-10
+DTSTART;VALUE=DATE:20331001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20331002
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20331002
 DTEND;VALUE=DATE:20331009
@@ -982,8 +1819,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203311
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-11
+DTSTART;VALUE=DATE:20331101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20331106
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20331106
 DTEND;VALUE=DATE:20331113
@@ -992,8 +1838,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203312
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2033-12
+DTSTART;VALUE=DATE:20331201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20331204
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20331204
 DTEND;VALUE=DATE:20331211
@@ -1003,7 +1858,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20340101
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340101
 DTEND;VALUE=DATE:20340108
@@ -1012,8 +1867,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203401
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-01
+DTSTART;VALUE=DATE:20340101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203402
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-02
+DTSTART;VALUE=DATE:20340201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20340205
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340205
 DTEND;VALUE=DATE:20340212
@@ -1022,8 +1895,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203403
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-03
+DTSTART;VALUE=DATE:20340301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20340305
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340305
 DTEND;VALUE=DATE:20340312
@@ -1032,8 +1914,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203404
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-04
+DTSTART;VALUE=DATE:20340401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20340402
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340402
 DTEND;VALUE=DATE:20340409
@@ -1042,8 +1933,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203405
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-05
+DTSTART;VALUE=DATE:20340501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20340507
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340507
 DTEND;VALUE=DATE:20340514
@@ -1052,8 +1952,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203406
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-06
+DTSTART;VALUE=DATE:20340601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20340604
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340604
 DTEND;VALUE=DATE:20340611
@@ -1062,8 +1971,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203407
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-07
+DTSTART;VALUE=DATE:20340701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20340702
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340702
 DTEND;VALUE=DATE:20340709
@@ -1072,8 +1990,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203408
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-08
+DTSTART;VALUE=DATE:20340801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20340806
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340806
 DTEND;VALUE=DATE:20340813
@@ -1082,8 +2009,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203409
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-09
+DTSTART;VALUE=DATE:20340901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20340903
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20340903
 DTEND;VALUE=DATE:20340910
@@ -1093,7 +2029,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20341001
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20341001
 DTEND;VALUE=DATE:20341008
@@ -1102,8 +2038,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203410
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-10
+DTSTART;VALUE=DATE:20341001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203411
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-11
+DTSTART;VALUE=DATE:20341101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20341105
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20341105
 DTEND;VALUE=DATE:20341112
@@ -1112,8 +2066,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203412
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2034-12
+DTSTART;VALUE=DATE:20341201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20341203
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20341203
 DTEND;VALUE=DATE:20341210
@@ -1122,8 +2085,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203501
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-01
+DTSTART;VALUE=DATE:20350101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20350107
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350107
 DTEND;VALUE=DATE:20350114
@@ -1132,8 +2104,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203502
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-02
+DTSTART;VALUE=DATE:20350201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20350204
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350204
 DTEND;VALUE=DATE:20350211
@@ -1142,8 +2123,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203503
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-03
+DTSTART;VALUE=DATE:20350301
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20350304
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350304
 DTEND;VALUE=DATE:20350311
@@ -1153,7 +2143,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20350401
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350401
 DTEND;VALUE=DATE:20350408
@@ -1162,8 +2152,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203504
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-04
+DTSTART;VALUE=DATE:20350401
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203505
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-05
+DTSTART;VALUE=DATE:20350501
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20350506
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350506
 DTEND;VALUE=DATE:20350513
@@ -1172,8 +2180,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203506
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-06
+DTSTART;VALUE=DATE:20350601
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20350603
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350603
 DTEND;VALUE=DATE:20350610
@@ -1183,7 +2200,7 @@ CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
 UID:darkmoon-20350701
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350701
 DTEND;VALUE=DATE:20350708
@@ -1192,8 +2209,26 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203507
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-07
+DTSTART;VALUE=DATE:20350701
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
+UID:trading-post-203508
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-08
+DTSTART;VALUE=DATE:20350801
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20350805
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350805
 DTEND;VALUE=DATE:20350812
@@ -1202,8 +2237,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203509
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-09
+DTSTART;VALUE=DATE:20350901
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20350902
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20350902
 DTEND;VALUE=DATE:20350909
@@ -1212,8 +2256,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203510
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-10
+DTSTART;VALUE=DATE:20351001
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20351007
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20351007
 DTEND;VALUE=DATE:20351014
@@ -1222,8 +2275,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203511
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-11
+DTSTART;VALUE=DATE:20351101
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20351104
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20351104
 DTEND;VALUE=DATE:20351111
@@ -1232,8 +2294,17 @@ URL:https://worldofwarcraft.blizzard.com/
 CATEGORIES:Foire de Sombrelune
 END:VEVENT
 BEGIN:VEVENT
+UID:trading-post-203512
+DTSTAMP:20260719T163021Z
+SUMMARY:💰 Comptoir - 2035-12
+DTSTART;VALUE=DATE:20351201
+DESCRIPTION:Le Comptoir est renouvelé. Consultez les nouvelles récompenses mensuelles et terminez les activités du Journal du voyage.
+URL:https://worldofwarcraft.blizzard.com/
+CATEGORIES:Trading Post
+END:VEVENT
+BEGIN:VEVENT
 UID:darkmoon-20351202
-DTSTAMP:20260719T162752Z
+DTSTAMP:20260719T163021Z
 SUMMARY:🎠 Foire de Sombrelune
 DTSTART;VALUE=DATE:20351202
 DTEND;VALUE=DATE:20351209
