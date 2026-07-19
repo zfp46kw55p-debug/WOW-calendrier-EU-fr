@@ -26,13 +26,16 @@ def escape_ics(value):
 
 
 def validate_date(value):
+    """Valide une date au format YYYYMMDD."""
     datetime.strptime(value, "%Y%m%d")
 
 
 def validate_events(events):
+    """Vérifie les champs obligatoires et les UID."""
     seen = set()
 
     for event in events:
+
         for field in ("uid", "title", "start"):
             if field not in event:
                 raise ValueError(
@@ -53,10 +56,13 @@ def validate_events(events):
 
 
 def load_events():
+    """Charge tous les fichiers JSON du dossier data."""
     events = []
 
     for file in sorted(DATA_DIR.glob("*.json")):
+
         with open(file, encoding="utf-8") as f:
+
             data = json.load(f)
 
             if not isinstance(data, list):
@@ -70,6 +76,8 @@ def load_events():
 
 
 def write_calendar(events):
+    """Génère le fichier ICS."""
+
     now = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
 
     lines = [
@@ -79,25 +87,48 @@ def write_calendar(events):
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
         "X-WR-CALNAME:WoW Retail EU FR",
+        "X-WR-CALDESC:Calendrier des événements World of Warcraft Retail Europe en français",
         "X-WR-TIMEZONE:Europe/Zurich",
+        "URL:https://zfp46kw55p-debug.github.io/WOW-calendrier-EU-fr/",
     ]
 
     for event in events:
+
         lines.append("BEGIN:VEVENT")
+
         lines.append(f"UID:{escape_ics(event['uid'])}")
         lines.append(f"DTSTAMP:{now}")
+
         lines.append(f"SUMMARY:{escape_ics(event['title'])}")
-        lines.append(f"DTSTART;VALUE=DATE:{event['start']}")
+
+        lines.append(
+            f"DTSTART;VALUE=DATE:{event['start']}"
+        )
 
         if "end" in event:
-            lines.append(f"DTEND;VALUE=DATE:{event['end']}")
+            lines.append(
+                f"DTEND;VALUE=DATE:{event['end']}"
+            )
+
+        # L'événement est confirmé
+        lines.append("STATUS:CONFIRMED")
+
+        # N'occupe pas la journée dans l'agenda
+        lines.append("TRANSP:TRANSPARENT")
 
         if "rrule" in event:
-            lines.append(f"RRULE:{event['rrule']}")
+            lines.append(
+                f"RRULE:{event['rrule']}"
+            )
 
         if "description" in event:
             lines.append(
                 f"DESCRIPTION:{escape_ics(event['description'])}"
+            )
+
+        if "location" in event:
+            lines.append(
+                f"LOCATION:{escape_ics(event['location'])}"
             )
 
         if "url" in event:
@@ -106,6 +137,7 @@ def write_calendar(events):
             )
 
         if "category" in event:
+
             category = event["category"]
 
             if isinstance(category, list):
@@ -128,9 +160,13 @@ def write_calendar(events):
 
 
 def main():
+
     events = load_events()
+
     validate_events(events)
+
     events.sort(key=lambda e: e["start"])
+
     write_calendar(events)
 
 
