@@ -13,21 +13,20 @@
       "https://worldofwarcraft.blizzard.com/",
       "https://warcraft.wiki.gg/wiki/Lunar_Festival"
     ]
+  },
+  {
+    "id": "holiday_love_is_in_the_air",
+    "uid": "holiday_love_is_in_the_air_2026",
+    "title": "❤️ Amour dans l'air",
+    "start": "20260209",
+    "end": "20260224",
+    "category": "holiday",
+    "location": "Hurlevent, Orgrimmar et Gala des Cadeaux",
+    "description": "Participez aux festivités d'Amour dans l'air, accomplissez les quêtes quotidiennes, affrontez les apothicaires de la Compagnie de Chimie La Royale et récoltez des Gages d'amour pour obtenir montures, mascottes, jouets, transmogrifications et hauts faits.",
+    "url": "https://worldofwarcraft.blizzard.com/",
+    "sources": [
+      "https://worldofwarcraft.blizzard.com/",
+      "https://warcraft.wiki.gg/wiki/Love_is_in_the_Air"
+    ]
   }
-{
-  "id": "holiday_love_is_in_the_air",
-  "uid": "holiday_love_is_in_the_air_2026",
-  "title": "❤️ Amour dans l'air",
-  "start": "20260209",
-  "end": "20260224",
-  "category": "holiday",
-  "location": "Hurlevent, Orgrimmar et Gala des Cadeaux",
-  "description": "Participez aux festivités d'Amour dans l'air, accomplissez les quêtes quotidiennes, affrontez les apothicaires de la Compagnie de Chimie La Royale et récoltez des Gages d'amour pour obtenir montures, mascottes, jouets, transmogrifications et hauts faits.",
-  "url": "https://worldofwarcraft.blizzard.com/",
-  "sources": [
-    "https://worldofwarcraft.blizzard.com/",
-    "https://warcraft.wiki.gg/wiki/Love_is_in_the_Air"
-  ]
-}
-  ]
-  
+]
