@@ -33,7 +33,6 @@ def validate_events(events):
     seen = set()
 
     for event in events:
-
         for field in ("uid", "title", "start"):
             if field not in event:
                 raise ValueError(
@@ -57,9 +56,7 @@ def load_events():
     events = []
 
     for file in sorted(DATA_DIR.glob("*.json")):
-
         with open(file, encoding="utf-8") as f:
-
             data = json.load(f)
 
             if not isinstance(data, list):
@@ -73,7 +70,6 @@ def load_events():
 
 
 def write_calendar(events):
-
     now = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
 
     lines = [
@@ -87,7 +83,6 @@ def write_calendar(events):
     ]
 
     for event in events:
-
         lines.append("BEGIN:VEVENT")
         lines.append(f"UID:{escape_ics(event['uid'])}")
         lines.append(f"DTSTAMP:{now}")
@@ -111,7 +106,6 @@ def write_calendar(events):
             )
 
         if "category" in event:
-
             category = event["category"]
 
             if isinstance(category, list):
@@ -134,13 +128,9 @@ def write_calendar(events):
 
 
 def main():
-
     events = load_events()
-
     validate_events(events)
-
     events.sort(key=lambda e: e["start"])
-
     write_calendar(events)
 
 
