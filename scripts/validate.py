@@ -184,3 +184,31 @@ def validate_events(events):
                 errors += 1
 
     return errors
+def main():
+
+    print("WoW Calendrier EU FR")
+    print("Validation des données\n")
+
+    events = load_events()
+
+    if not events:
+
+        print("Aucun événement trouvé.")
+        return 1
+
+    errors = validate_events(events)
+
+    print("----------------------------------------")
+    print(f"{len(events)} événements contrôlés")
+
+    if errors:
+
+        print(f"{errors} erreur(s) détectée(s).")
+        return 1
+
+    print("Aucune erreur détectée.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
