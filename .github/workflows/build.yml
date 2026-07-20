@@ -1,24 +1,27 @@
-name: Générer le calendrier WoW
+name: Valider et générer le calendrier WoW
 
 on:
   push:
-    branches:
-      - main
-      
+    branches: [main]
     paths:
+      - "config.json"
       - "data/**/*.json"
       - "scripts/**/*.py"
       - ".github/workflows/build.yml"
-
+  pull_request:
+    paths:
+      - "config.json"
+      - "data/**/*.json"
+      - "scripts/**/*.py"
+      - ".github/workflows/build.yml"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  validate-and-build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Télécharger le dépôt
         uses: actions/checkout@v4
@@ -28,10 +31,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Valider les données
+        run: python scripts/validate.py
+
       - name: Générer le calendrier
         run: python scripts/build.py
 
-      - name: Commit automatique si le calendrier change
+      - name: Vérifier que le calendrier est à jour
+        if: github.event_name == 'pull_request'
+        run: git diff --exit-code -- wow-eu.ics
+
+      - name: Commit automatique du calendrier
+        if: github.event_name == 'push'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Mise à jour automatique du calendrier"
