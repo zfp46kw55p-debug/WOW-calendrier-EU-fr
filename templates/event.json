@@ -1,1 +1,14 @@
-
+{
+  "id": "identifiant-interne-optionnel",
+  "uid": "identifiant-ics-unique",
+  "title": "Titre affiché",
+  "start": "20260101",
+  "end": "20260102",
+  "category": "catégorie",
+  "description": "Description utile dans le calendrier.",
+  "location": "Lieu dans World of Warcraft",
+  "url": "https://worldofwarcraft.blizzard.com/",
+  "sources": [
+    "https://worldofwarcraft.blizzard.com/"
+  ]
+}
