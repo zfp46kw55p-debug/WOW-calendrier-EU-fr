@@ -1,233 +1,121 @@
 # Format des données
 
-Tous les événements du calendrier sont définis dans des fichiers JSON situés dans le dossier `data/`.
+Tous les événements sont enregistrés dans des fichiers JSON du dossier `data/`. Chaque fichier contient une **liste**, même lorsqu'il n'y a encore aucun événement :
 
-Chaque fichier contient une **liste d'événements**.
+```json
+[]
+```
+
+Le générateur lit automatiquement tous les `*.json` de `data/` et de ses sous-dossiers. Un nom commençant par `_` est ignoré.
+
+## Exemple minimal
 
 ```json
 [
-    {
-        "uid": "wow-brewfest",
-        "title": "La fête des Brasseurs",
-        "start": "20260920"
-    }
+  {
+    "uid": "weekly-reset-eu",
+    "title": "Réinitialisation hebdomadaire",
+    "start": "20260722",
+    "rrule": "FREQ=WEEKLY;BYDAY=WE",
+    "category": "Réinitialisation"
+  }
 ]
 ```
 
----
-
-# Structure d'un événement
-
-| Champ | Type | Obligatoire | Description |
-|-------|------|-------------|-------------|
-| uid | string | Oui | Identifiant unique de l'événement. |
-| title | string | Oui | Nom affiché dans le calendrier. |
-| start | string | Oui | Date de début au format `YYYYMMDD`. |
-| end | string | Non | Date de fin (exclusive) au format `YYYYMMDD`. |
-| description | string | Non | Description de l'événement. |
-| location | string | Non | Lieu de l'événement. |
-| url | string | Non | Lien HTTPS vers une source officielle. |
-| rrule | string | Non | Règle de récurrence au format iCalendar. |
-| category | string ou liste | Non | Catégorie(s) de l'événement. |
-
----
-
-# Champs obligatoires
-
-## uid
-
-Chaque événement possède un identifiant unique.
-
-Exemple :
+## Exemple complet
 
 ```json
-{
-    "uid": "wow-hallows-end"
-}
+[
+  {
+    "id": "holiday-brewfest",
+    "uid": "holiday-brewfest-2026",
+    "title": "🍺 Fête des Brasseurs",
+    "start": "20260920",
+    "end": "20261007",
+    "category": [
+      "Fête mondiale",
+      "Fête des Brasseurs"
+    ],
+    "description": "Participez aux festivités brassicoles et obtenez des récompenses saisonnières.",
+    "location": "Dornogal, Forgefer et Orgrimmar",
+    "url": "https://worldofwarcraft.blizzard.com/",
+    "sources": [
+      "https://worldofwarcraft.blizzard.com/"
+    ]
+  }
+]
 ```
 
-Bonnes pratiques :
+## Champs
 
-- uniquement des lettres minuscules ;
-- utiliser des tirets (`-`) comme séparateurs ;
-- rester descriptif ;
-- ne jamais réutiliser un UID existant.
+| Champ | Type | Obligatoire | Usage |
+|---|---|:---:|---|
+| `uid` | chaîne | oui | Identifiant iCalendar unique et stable. |
+| `title` | chaîne | oui | Titre affiché dans le calendrier. |
+| `start` | chaîne | oui | Date de début au format `YYYYMMDD`. |
+| `category` | chaîne ou liste | oui | Catégorie(s) exportée(s) dans l'ICS. |
+| `end` | chaîne | non | Date de fin **exclusive**, format `YYYYMMDD`. |
+| `id` | chaîne | non | Identifiant interne stable, en minuscules sans espaces. |
+| `description` | chaîne | non | Description affichée dans le calendrier. |
+| `location` | chaîne | non | Lieu dans le jeu. |
+| `url` | chaîne HTTPS | non | Lien principal affiché dans le calendrier. |
+| `sources` | liste d'URL HTTPS | non | Sources de vérification, non exportées dans l'ICS. |
+| `rrule` | chaîne | non | Règle de récurrence iCalendar contenant `FREQ=`. |
 
-Exemples :
+Aucun autre champ n'est accepté sans adaptation préalable du validateur et de la documentation.
 
-```
-wow-brewfest
-wow-darkmoon-faire
-wow-pirates-day
-```
+## Règles importantes
 
----
+### UID
 
-## title
-
-Nom affiché dans le calendrier.
+Le `uid` doit être unique dans tout le dépôt. Pour un événement daté, inclure l'année ou la date évite les collisions :
 
 ```json
-"title": "La fête des Brasseurs"
+"uid": "darkmoon-20260104"
 ```
 
-Le titre doit être court, clair et lisible.
+Pour une récurrence permanente, conserver un UID stable :
 
----
-
-## start
-
-Date de début.
-
-Format obligatoire :
-
-```
-YYYYMMDD
+```json
+"uid": "weekly-reset-eu"
 ```
 
-Exemple :
+Un UID déjà publié ne doit pas être renommé sans nécessité, car les applications de calendrier pourraient créer un doublon.
+
+### Dates
+
+Les dates sont écrites sans séparateur :
 
 ```json
 "start": "20260920"
 ```
 
----
-
-# Champs optionnels
-
-## end
-
-Date de fin.
+`end` est exclusive. Pour un événement visible du 20 septembre au 6 octobre inclus :
 
 ```json
-"end": "20261006"
+"start": "20260920",
+"end": "20261007"
 ```
 
-La date de fin doit être postérieure à la date de début.
+Pour un événement d'une seule journée, `end` peut être omise.
 
-Conformément à la norme iCalendar, la date de fin est **exclusive**.
+### Sources
 
----
+`sources` sert à documenter la vérification sans surcharger l'événement ICS. Privilégier Blizzard, puis Warcraft Wiki, Wowhead ou Icy Veins lorsque la source officielle ne suffit pas.
 
-## description
+## Ajouter un événement
 
-Texte libre.
+Assistant recommandé :
 
-Exemple :
-
-```json
-"description": "Événement mondial disponible dans toutes les capitales."
+```bash
+python scripts/new_event.py nom_du_fichier.json
 ```
 
----
+Ajout manuel : copier `templates/event.json`, compléter les champs et insérer l'objet dans la liste du fichier concerné.
 
-## location
-
-Lieu affiché dans le calendrier.
-
-```json
-"location": "Hurlevent"
-```
-
----
-
-## url
-
-Lien vers une source officielle.
-
-```json
-"url": "https://worldofwarcraft.blizzard.com/"
-```
-
-Seules les URL HTTPS sont acceptées.
-
----
-
-## rrule
-
-Permet de créer des événements récurrents.
-
-Exemple :
-
-```json
-"rrule": "FREQ=YEARLY"
-```
-
-La syntaxe utilisée est celle de la norme iCalendar.
-
----
-
-## category
-
-Une ou plusieurs catégories.
-
-Exemple :
-
-```json
-"category": "holiday"
-```
-
-ou
-
-```json
-"category": [
-    "holiday",
-    "world-event"
-]
-```
-
----
-
-# Exemple complet
-
-```json
-{
-    "uid": "wow-brewfest",
-    "title": "La fête des Brasseurs",
-    "start": "20260920",
-    "end": "20261006",
-    "description": "Événement mondial.",
-    "location": "Forgefer",
-    "url": "https://worldofwarcraft.blizzard.com/",
-    "rrule": "FREQ=YEARLY",
-    "category": [
-        "holiday",
-        "world-event"
-    ]
-}
-```
-
----
-
-# Validation
-
-Avant chaque génération du calendrier, exécutez :
+## Vérification et génération
 
 ```bash
 python scripts/validate.py
-```
-
-Le validateur contrôle notamment :
-
-- la syntaxe JSON ;
-- les champs obligatoires ;
-- les champs inconnus ;
-- les types de données ;
-- le format des dates ;
-- les UID en double ;
-- les URL HTTPS ;
-- les catégories.
-
-Aucune erreur ne doit être signalée avant de lancer la génération du calendrier.
-
----
-
-# Génération
-
-Une fois la validation réussie :
-
-```bash
 python scripts/build.py
 ```
-
-Le fichier `wow-eu.ics` est alors généré à la racine du projet.

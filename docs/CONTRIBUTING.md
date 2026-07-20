@@ -1,164 +1,58 @@
-# Contribuer au WoW Calendrier EU FR
+# Contribuer
 
-Merci de votre intérêt pour ce projet !
+Le projet est conçu pour qu'un événement puisse être ajouté ou corrigé sans toucher au code Python.
 
-L'objectif est de proposer un calendrier World of Warcraft (Europe – Français) fiable, précis et facile à maintenir. Avant de proposer une modification, merci de prendre connaissance des recommandations suivantes.
+## Ajouter un événement
 
----
-
-# Prérequis
-
-Le projet nécessite uniquement :
-
-- Python 3.10 ou supérieur
-- Aucune dépendance externe
-
----
-
-# Structure du projet
-
-```
-.
-├── data/                  # Données des événements (JSON)
-├── docs/
-│   └── data-format.md     # Documentation du format des données
-├── scripts/
-│   ├── build.py           # Génération du calendrier ICS
-│   └── validate.py        # Validation des fichiers JSON
-├── wow-eu.ics             # Calendrier généré
-├── README.md
-└── CONTRIBUTING.md
-```
-
----
-
-# Workflow recommandé
-
-Après avoir cloné le dépôt :
+Méthode recommandée :
 
 ```bash
-git clone https://github.com/<utilisateur>/WOW-calendrier-EU-fr.git
-
-cd WOW-calendrier-EU-fr
-
-python scripts/validate.py
-
-python scripts/build.py
+python scripts/new_event.py micro_holidays.json
 ```
 
-Si aucune erreur n'est signalée, vous pouvez créer votre Pull Request.
+L'assistant ajoute l'événement et trie le fichier. Une autre possibilité consiste à copier `templates/event.json` et à modifier directement un fichier de `data/`.
 
----
+## Modifier un événement
 
-# Ajouter ou modifier un événement
+Rechercher son `uid` dans `data/`, modifier uniquement les informations nécessaires, puis conserver cet UID. Les changements de dates annuelles peuvent en revanche nécessiter un nouvel objet avec un nouvel UID daté.
 
-Tous les événements sont définis dans les fichiers JSON du dossier `data/`.
+## Contrôles obligatoires
 
-Chaque événement doit respecter le format décrit dans :
-
-```
-docs/data-format.md
-```
-
-Les champs obligatoires sont :
-
-- `uid`
-- `title`
-- `start`
-
-Les autres champs sont optionnels.
-
----
-
-# Validation
-
-Avant toute Pull Request, exécutez :
+Avant tout commit ou Pull Request :
 
 ```bash
 python scripts/validate.py
-```
-
-Le validateur vérifie notamment :
-
-- la syntaxe JSON ;
-- les champs obligatoires ;
-- les champs inconnus ;
-- les types de données ;
-- le format des dates ;
-- les UID en double ;
-- les URL HTTPS ;
-- les catégories.
-
-Aucune erreur ne doit être signalée.
-
----
-
-# Génération du calendrier
-
-Une fois les données validées :
-
-```bash
 python scripts/build.py
 ```
 
-Le fichier `wow-eu.ics` est alors généré.
+Le premier contrôle la syntaxe, les champs, les dates, les doublons, les URL et les récurrences. Le second régénère `wow-eu.ics`.
 
----
+## Qualité éditoriale
 
-# Style du projet
+- Utiliser le titre français officiel lorsqu'il existe.
+- Donner une description courte et utile dans un calendrier.
+- Indiquer `end` comme date exclusive.
+- Ajouter au moins une source fiable lorsque l'information a été vérifiée.
+- Privilégier les sources officielles Blizzard.
+- Limiter une Pull Request à un seul sujet cohérent.
 
-Le projet privilégie un code simple et facile à maintenir.
+La politique complète figure dans `docs/editorial-policy.md` et le schéma des champs dans `docs/data-format.md`.
 
-Merci de respecter les principes suivants :
+## Ajouter un nouveau fichier de données
 
-- utiliser uniquement la bibliothèque standard Python ;
-- privilégier les fonctions simples ;
-- éviter les dépendances externes ;
-- écrire un code clair et lisible ;
-- conserver un style cohérent avec le reste du projet.
+Créer simplement `data/nom_du_groupe.json` contenant :
 
----
+```json
+[]
+```
 
-# Qualité des données
+Le générateur le découvrira automatiquement. Aucun registre ni changement dans `build.py` n'est nécessaire.
 
-Les données constituent le cœur du projet.
+## Modifier le format
 
-Avant de proposer un nouvel événement, vérifiez systématiquement :
+Un nouveau champ ne doit pas être ajouté isolément dans les données. Il faut aussi :
 
-- les dates ;
-- le titre ;
-- les descriptions ;
-- les liens Internet.
-
-Lorsque cela est possible, privilégiez toujours les sources officielles de Blizzard.
-
----
-
-# Pull Requests
-
-Merci de limiter chaque Pull Request à un seul sujet.
-
-Exemples :
-
-- correction d'une date ;
-- ajout d'un événement ;
-- amélioration de la documentation ;
-- amélioration des scripts.
-
-Évitez de regrouper plusieurs modifications indépendantes dans une même Pull Request.
-
----
-
-# Avant de créer une Pull Request
-
-Vérifiez les points suivants :
-
-- [ ] Les fichiers JSON sont valides.
-- [ ] `python scripts/validate.py` ne retourne aucune erreur.
-- [ ] `python scripts/build.py` génère correctement le calendrier.
-- [ ] Les informations ajoutées ont été vérifiées.
-- [ ] La Pull Request traite un seul sujet.
-
----
-
-Merci pour votre contribution !
+1. expliquer son utilité dans `docs/data-format.md` ;
+2. l'ajouter aux règles de `scripts/event_data.py` ;
+3. préciser s'il doit être exporté dans `scripts/build.py` ;
+4. valider les données existantes.
