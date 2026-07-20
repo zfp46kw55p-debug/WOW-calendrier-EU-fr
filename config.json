@@ -1,0 +1,8 @@
+{
+  "calendar_name": "WoW Retail EU FR",
+  "calendar_description": "Calendrier des événements World of Warcraft Retail Europe en français",
+  "calendar_url": "https://zfp46kw55p-debug.github.io/WOW-calendrier-EU-fr/",
+  "output_file": "wow-eu.ics",
+  "prodid": "-//WoW Calendrier EU FR//Retail//FR",
+  "timezone": "Europe/Zurich"
+}
