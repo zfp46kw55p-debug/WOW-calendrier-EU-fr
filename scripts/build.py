@@ -1,174 +1,125 @@
 #!/usr/bin/env python3
-"""
-WoW Calendrier EU FR
-Générateur du fichier wow-eu.ics
-"""
+"""Génère le calendrier wow-eu.ics à partir des fichiers JSON."""
 
-import json
+from __future__ import annotations
+
+import sys
+from datetime import datetime, timezone
 from pathlib import Path
-from datetime import datetime
+from typing import Iterable
 
-ROOT = Path(__file__).resolve().parent.parent
-
-DATA_DIR = ROOT / "data"
-OUTPUT = ROOT / "wow-eu.ics"
+from event_data import DataError, ROOT, categories, load_config, load_events, validate_event
 
 
-def escape_ics(value):
-    """Échappe les caractères spéciaux RFC5545."""
+def escape_ics(value: object) -> str:
+    """Échappe une valeur texte selon RFC 5545."""
     return (
         str(value)
         .replace("\\", "\\\\")
         .replace(";", r"\;")
         .replace(",", r"\,")
+        .replace("\r\n", r"\n")
         .replace("\n", r"\n")
+        .replace("\r", r"\n")
     )
 
 
-def validate_date(value):
-    """Valide une date au format YYYYMMDD."""
-    datetime.strptime(value, "%Y%m%d")
+def fold_line(line: str, limit: int = 75) -> list[str]:
+    """Plie une ligne ICS sans couper un caractère UTF-8."""
+    chunks: list[str] = []
+    remaining = line
+    first = True
+    while len(remaining.encode("utf-8")) > limit:
+        prefix = "" if first else " "
+        available = limit - len(prefix.encode("utf-8"))
+        cut = 0
+        used = 0
+        for index, char in enumerate(remaining):
+            size = len(char.encode("utf-8"))
+            if used + size > available:
+                break
+            used += size
+            cut = index + 1
+        chunks.append(prefix + remaining[:cut])
+        remaining = remaining[cut:]
+        first = False
+    chunks.append(("" if first else " ") + remaining)
+    return chunks
 
 
-def validate_events(events):
-    """Vérifie les champs obligatoires et les UID."""
-    seen = set()
+def append(lines: list[str], line: str) -> None:
+    lines.extend(fold_line(line))
 
-    for event in events:
 
-        for field in ("uid", "title", "start"):
-            if field not in event:
-                raise ValueError(
-                    f"Champ obligatoire manquant : {field}\n{event}"
+def event_lines(event: dict[str, object], stamp: str) -> Iterable[str]:
+    lines: list[str] = ["BEGIN:VEVENT"]
+    append(lines, f"UID:{escape_ics(event['uid'])}")
+    append(lines, f"DTSTAMP:{stamp}")
+    append(lines, f"SUMMARY:{escape_ics(event['title'])}")
+    append(lines, f"DTSTART;VALUE=DATE:{event['start']}")
+
+    if "end" in event:
+        append(lines, f"DTEND;VALUE=DATE:{event['end']}")
+    if "rrule" in event:
+        append(lines, f"RRULE:{event['rrule']}")
+    if "description" in event:
+        append(lines, f"DESCRIPTION:{escape_ics(event['description'])}")
+    if "location" in event:
+        append(lines, f"LOCATION:{escape_ics(event['location'])}")
+    if "url" in event:
+        append(lines, f"URL:{escape_ics(event['url'])}")
+
+    category_text = ",".join(escape_ics(item) for item in categories(event["category"]))
+    append(lines, f"CATEGORIES:{category_text}")
+    lines.extend(["STATUS:CONFIRMED", "TRANSP:TRANSPARENT", "END:VEVENT"])
+    return lines
+
+
+def main() -> int:
+    try:
+        config = load_config()
+        loaded = load_events()
+
+        errors: list[str] = []
+        for item in loaded:
+            for message in validate_event(item.data):
+                errors.append(
+                    f"{item.file.relative_to(ROOT)}, événement no {item.number} : {message}"
                 )
+        if errors:
+            raise DataError("\n".join(errors))
 
-        validate_date(event["start"])
-
-        if "end" in event:
-            validate_date(event["end"])
-
-        uid = event["uid"]
-
-        if uid in seen:
-            raise ValueError(f"UID en double : {uid}")
-
-        seen.add(uid)
-
-
-def load_events():
-    """Charge tous les fichiers JSON du dossier data."""
-    events = []
-
-    for file in sorted(DATA_DIR.glob("*.json")):
-
-        with open(file, encoding="utf-8") as f:
-
-            data = json.load(f)
-
-            if not isinstance(data, list):
-                raise ValueError(
-                    f"{file.name} doit contenir une liste."
-                )
-
-            events.extend(data)
-
-    return events
-
-
-def write_calendar(events):
-    """Génère le fichier ICS."""
-
-    now = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
-
-    lines = [
-        "BEGIN:VCALENDAR",
-        "VERSION:2.0",
-        "PRODID:-//WoW Calendrier EU FR//Retail//FR",
-        "CALSCALE:GREGORIAN",
-        "METHOD:PUBLISH",
-        "X-WR-CALNAME:WoW Retail EU FR",
-        "X-WR-CALDESC:Calendrier des événements World of Warcraft Retail Europe en français",
-        "X-WR-TIMEZONE:Europe/Zurich",
-        "URL:https://zfp46kw55p-debug.github.io/WOW-calendrier-EU-fr/",
-    ]
-
-    for event in events:
-
-        lines.append("BEGIN:VEVENT")
-
-        lines.append(f"UID:{escape_ics(event['uid'])}")
-        lines.append(f"DTSTAMP:{now}")
-
-        lines.append(f"SUMMARY:{escape_ics(event['title'])}")
-
-        lines.append(
-            f"DTSTART;VALUE=DATE:{event['start']}"
+        events = sorted(
+            (item.data for item in loaded),
+            key=lambda event: (event["start"], event["title"].casefold()),
         )
 
-        if "end" in event:
-            lines.append(
-                f"DTEND;VALUE=DATE:{event['end']}"
-            )
+        stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        lines = [
+            "BEGIN:VCALENDAR",
+            "VERSION:2.0",
+            f"PRODID:{config['prodid']}",
+            "CALSCALE:GREGORIAN",
+            "METHOD:PUBLISH",
+            f"X-WR-CALNAME:{escape_ics(config['calendar_name'])}",
+            f"X-WR-CALDESC:{escape_ics(config['calendar_description'])}",
+            f"X-WR-TIMEZONE:{escape_ics(config['timezone'])}",
+            f"URL:{config['calendar_url']}",
+        ]
 
-        # L'événement est confirmé
-        lines.append("STATUS:CONFIRMED")
+        for event in events:
+            lines.extend(event_lines(event, stamp))
+        lines.append("END:VCALENDAR")
 
-        # N'occupe pas la journée dans l'agenda
-        lines.append("TRANSP:TRANSPARENT")
-
-        if "rrule" in event:
-            lines.append(
-                f"RRULE:{event['rrule']}"
-            )
-
-        if "description" in event:
-            lines.append(
-                f"DESCRIPTION:{escape_ics(event['description'])}"
-            )
-
-        if "location" in event:
-            lines.append(
-                f"LOCATION:{escape_ics(event['location'])}"
-            )
-
-        if "url" in event:
-            lines.append(
-                f"URL:{escape_ics(event['url'])}"
-            )
-
-        if "category" in event:
-
-            category = event["category"]
-
-            if isinstance(category, list):
-                category = ",".join(category)
-
-            lines.append(
-                f"CATEGORIES:{escape_ics(category)}"
-            )
-
-        lines.append("END:VEVENT")
-
-    lines.append("END:VCALENDAR")
-
-    OUTPUT.write_text(
-        "\n".join(lines),
-        encoding="utf-8"
-    )
-
-    print(f"{len(events)} événements générés.")
-
-
-def main():
-
-    events = load_events()
-
-    validate_events(events)
-
-    events.sort(key=lambda e: e["start"])
-
-    write_calendar(events)
+        output = ROOT / config["output_file"]
+        output.write_text("\r\n".join(lines) + "\r\n", encoding="utf-8", newline="")
+        print(f"✓ {len(events)} événements générés dans {output.relative_to(ROOT)}.")
+        return 0
+    except DataError as exc:
+        print(f"✗ Génération impossible :\n{exc}", file=sys.stderr)
+        print("Exécutez d'abord : python scripts/validate.py", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
