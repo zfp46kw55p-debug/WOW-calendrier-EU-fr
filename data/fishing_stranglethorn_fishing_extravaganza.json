@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fishing_stranglethorn_fishing_extravaganza",
+    "uid": "fishing_stranglethorn_fishing_extravaganza_2026",
+    "title": "🎣 Concours de pêche de Strangleronce",
+    "start": "20260104T140000Z",
+    "end": "20260104T160000Z",
+    "category": "fishing_event",
+    "location": "Baie-du-Butin",
+    "description": "Participez au Concours de pêche de Strangleronce, capturez les poissons recherchés et affrontez les autres pêcheurs d'Azeroth pour remporter des récompenses uniques.",
+    "url": "https://warcraft.wiki.gg/wiki/Stranglethorn_Fishing_Extravaganza",
+    "sources": [
+      "https://warcraft.wiki.gg/wiki/Stranglethorn_Fishing_Extravaganza"
+    ]
+  }
+]
