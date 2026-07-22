@@ -6,11 +6,11 @@
     "start": "20260202",
     "end": "20260303",
     "category": "holiday",
-    "location": "Reflet-de-Lune (Moonglade)",
-    "description": "Honorez les Anciens à travers Azeroth, récoltez des Pièces des ancêtres, affrontez Omen au lac Elune'ara, obtenez des récompenses exclusives et progressez vers le méta haut fait « Ancien ». Des campements sont présents dans les capitales avec des portails vers Reflet-de-Lune.",
-    "url": "https://worldofwarcraft.blizzard.com/",
+    "location": "Reflet-de-Lune",
+    "description": "Honorez les Anciens à travers Azeroth, récoltez des pièces des ancêtres, affrontez Présage au lac Elune'ara et obtenez des montures, mascottes, jouets, transmogrifications et hauts faits.",
+    "url": "https://worldofwarcraft.blizzard.com/fr-fr/",
     "sources": [
-      "https://worldofwarcraft.blizzard.com/",
+      "https://worldofwarcraft.blizzard.com/fr-fr/",
       "https://warcraft.wiki.gg/wiki/Lunar_Festival"
     ]
   }
