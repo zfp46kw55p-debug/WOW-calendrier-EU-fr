@@ -1,216 +1,204 @@
 # Politique éditoriale
 
-Ce document définit les règles de sélection des événements inclus dans le calendrier **WoW Calendrier EU FR**.
+## Objectif
 
-L'objectif est de proposer un calendrier utile, cohérent et facile à maintenir.
+Le projet **WoW Calendrier EU FR** a pour objectif de fournir un calendrier iCalendar (.ics) des événements de **World of Warcraft Retail Europe**, entièrement en français.
 
----
+Chaque événement doit être :
 
-# Principe général
+- exact ;
+- homogène ;
+- facilement maintenable ;
+- fondé sur des sources vérifiables.
 
-Le calendrier référence uniquement les événements ayant une dimension **calendaire**.
-
-Un événement doit répondre à la question :
-
-> **« Dois-je savoir qu'il commence ou qu'il se termine à une date précise ? »**
-
-Si la réponse est oui, il a probablement sa place dans le calendrier.
+Le calendrier n'a pas vocation à remplacer un guide de jeu. Il présente uniquement les informations essentielles permettant au joueur d'identifier rapidement un événement.
 
 ---
 
-# Événements inclus
+# Principes éditoriaux
 
-## Fêtes mondiales
+Chaque événement doit répondre à trois questions :
 
-Toutes les fêtes mondiales officielles de World of Warcraft.
+- Quand a lieu l'événement ?
+- Où commence-t-il ?
+- De quoi s'agit-il ?
 
-Exemples :
+Les descriptions doivent rester concises et privilégier les informations les plus utiles.
 
-- De l'amour dans l'air
-- Jardin des nobles
-- Semaine des enfants
-- Solstice d'été
-- Fête des Brasseurs
-- Sanssaint
-- Bienfaits du pèlerin
-- Voile d'hiver
-- Fête lunaire
-- Anniversaire de World of Warcraft
+Les stratégies de jeu, les listes exhaustives de récompenses ou les explications détaillées n'ont pas leur place dans ce projet.
 
 ---
 
-## Micro-fêtes
+# Terminologie
 
-Toutes les micro-fêtes officielles.
+Lorsque Blizzard publie une terminologie officielle en français, celle-ci est toujours privilégiée.
 
-Exemples :
+Cela concerne notamment :
 
-- Jour des morts
-- Jour des pirates
-- Festival de l'explorateur
-- Marche des têtards
-- Naissance des hippogriffes
-- Journée des gardes volontaires
-- Grand Prix de Gnomeregan
-- Chemises à gogo
+- le nom des événements ;
+- les noms des PNJ ;
+- les monnaies d'événement ;
+- les objets ;
+- les hauts faits ;
+- les lieux.
 
----
-
-## Événements mondiaux
-
-Les événements exceptionnels officiellement organisés par Blizzard.
-
-Exemples :
-
-- Secrets d'Azeroth
-- Plunderstorm
-- Émissaire cupide
-
----
-
-## Rotations hebdomadaires
-
-Toutes les rotations planifiées.
-
-Exemples :
-
-- Bonus hebdomadaire
-- Marcheurs du temps
-- Boss mondiaux
-- Comptoir
-
----
-
-## PvP
-
-Les événements PvP ayant une période définie.
-
-Exemples :
-
-- Chocs JcJ
-- Événements PvP spéciaux
-
----
-
-## Mythique+
-
-Les événements liés aux saisons Mythique+.
-
-Exemples :
-
-- Début de saison
-- Fin de saison
-- Changements majeurs
-
----
-
-## Patches
-
-Les mises à jour majeures publiées par Blizzard.
-
-Les correctifs mineurs ("hotfixes") ne sont pas inclus.
-
----
-
-## Courses
-
-Les compétitions aériennes officielles.
-
-Exemples :
-
-- Coupe de Kalimdor
-- Coupe des Royaumes de l'Est
-- Coupe de Norfendre
-- Coupe de l'Outreterre
-
----
-
-# Événements exclus
-
-Les éléments suivants ne sont pas intégrés au calendrier.
-
-## Extensions
-
-Exemples :
-
-- Dragonflight
-- The War Within
-- Midnight
-
----
-
-## Raids
-
-Exemples :
-
-- Aberrus
-- Château Nathria
-- Palais Éternel
-- Ny'alotha
-
----
-
-## Donjons permanents
-
-Les donjons disponibles en permanence ne sont pas des événements calendaires.
-
----
-
-## Objets
-
-Le calendrier ne référence pas :
-
-- montures
-- mascottes
-- jouets
-- équipements
-- récompenses
-
----
-
-## Promotions commerciales
-
-Le calendrier n'inclut pas :
-
-- promotions Battle.net
-- offres de la boutique
-- Twitch Drops
-- cadeaux Prime Gaming
-
----
-
-## Autres jeux Blizzard
-
-Le projet est exclusivement consacré à **World of Warcraft**.
-
-Les événements liés à :
-
-- Hearthstone
-- Diablo
-- Overwatch
-- Warcraft Rumble
-
-ne sont pas inclus.
+La casse (majuscules et minuscules) est reproduite telle qu'elle apparaît dans les publications officielles.
 
 ---
 
 # Sources
 
-Les informations proviennent en priorité :
+Les informations sont vérifiées dans l'ordre de priorité suivant :
 
 1. Blizzard Entertainment
-2. World of Warcraft officiel
-3. Wowhead
-4. Icy Veins
+2. Site officiel World of Warcraft
+3. Warcraft Wiki
 
-En cas de divergence, les informations officielles de Blizzard font foi.
+Les sites communautaires (Wowhead, Icy Veins, etc.) peuvent être utilisés pour compléter une information absente des sources officielles, mais ne doivent pas s'y substituer.
+
+Toute information importante doit pouvoir être vérifiée.
 
 ---
 
-# Objectif du projet
+# Structure des événements
 
-Le but n'est pas de référencer tout le contenu de World of Warcraft.
+Chaque événement comprend les champs suivants :
 
-Le but est de proposer **le calendrier le plus fiable et le plus complet des événements calendaires de World of Warcraft en français**.
+- id
+- uid
+- title
+- start
+- end
+- category
+- location
+- description
+- url
+- sources
 
-Toute nouvelle contribution doit respecter cette ligne éditoriale.
+Le format détaillé est documenté dans :
+
+```
+docs/data-format.md
+```
+
+---
+
+# Champ « location »
+
+Le champ `location` représente le principal point de départ de l'événement.
+
+Il doit rester court.
+
+Trois cas sont utilisés.
+
+## Type A — Lieu unique
+
+Exemple :
+
+```
+Reflet-de-Lune
+```
+
+## Type B — Deux lieux principaux
+
+Exemple :
+
+```
+Hurlevent ou Fossoyeuse
+```
+
+ou
+
+```
+Forgefer ou Orgrimmar
+```
+
+## Type C — Événement réparti
+
+Lorsque l'événement se déroule dans de nombreux lieux sans qu'un point de départ unique ne soit pertinent :
+
+```
+Différents lieux d'Azeroth
+```
+
+Le champ `location` ne doit pas devenir une liste exhaustive de villes.
+
+---
+
+# Description
+
+La description doit être courte et informative.
+
+Elle présente :
+
+- l'événement ;
+- les activités principales ;
+- les principales récompenses.
+
+Elle ne doit pas devenir un guide de jeu.
+
+Les formulations promotionnelles sont évitées.
+
+Exemples :
+
+- récompenses exclusives
+- contenu exceptionnel
+- incroyable événement
+
+sauf lorsqu'elles sont reprises explicitement d'une communication officielle de Blizzard.
+
+---
+
+# Style rédactionnel
+
+Les descriptions utilisent un ton neutre.
+
+Exemples :
+
+- Participez…
+- Célébrez…
+- Honorez…
+- Accueillez…
+- Partez…
+
+Le style doit rester homogène dans l'ensemble du projet.
+
+Toutes les descriptions doivent donner l'impression d'avoir été rédigées par une seule personne.
+
+---
+
+# Évolution du jeu
+
+World of Warcraft évolue régulièrement.
+
+Lorsqu'une nouvelle extension ajoute un nouveau hub principal ou modifie un événement, les données sont mises à jour tout en conservant les principes éditoriaux du projet.
+
+La structure des événements doit rester stable d'une extension à l'autre.
+
+---
+
+# Contrôle qualité
+
+Avant toute publication :
+
+- les données sont validées automatiquement ;
+- les identifiants sont uniques ;
+- les dates sont vérifiées ;
+- les sources sont contrôlées ;
+- le calendrier ICS est régénéré.
+
+Les Pull Requests doivent respecter cette politique éditoriale.
+
+---
+
+# Philosophie
+
+La qualité du projet repose davantage sur la cohérence que sur la quantité d'informations.
+
+Chaque événement doit permettre au joueur de comprendre immédiatement :
+
+- quand l'événement a lieu ;
+- où le trouver ;
+- pourquoi il existe.
+
+Pour les informations détaillées, les utilisateurs sont invités à consulter les sources officielles référencées dans chaque événement.
