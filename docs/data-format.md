@@ -1,121 +1,145 @@
 # Format des données
 
-Tous les événements sont enregistrés dans des fichiers JSON du dossier `data/`. Chaque fichier contient une **liste**, même lorsqu'il n'y a encore aucun événement :
+Tous les événements du projet sont décrits dans des fichiers **JSON** situés dans le dossier `data/`.
+
+Chaque fichier contient un tableau JSON (`array`) d'un ou plusieurs événements.
+
+---
+
+# Structure d'un événement
+
+Chaque événement utilise la structure suivante :
 
 ```json
-[]
+{
+  "id": "holiday_brewfest",
+  "uid": "holiday_brewfest_2026",
+  "title": "🍺 Fête des Brasseurs",
+  "start": "20260920",
+  "end": "20261007",
+  "category": "holiday",
+  "location": "Forgefer ou Orgrimmar",
+  "description": "Participez aux festivités brassicoles, affrontez Coren Navrebière et récoltez des jetons de la fête des Brasseurs.",
+  "url": "https://…",
+  "sources": [
+    "https://…",
+    "https://…"
+  ]
+}
 ```
 
-Le générateur lit automatiquement tous les `*.json` de `data/` et de ses sous-dossiers. Un nom commençant par `_` est ignoré.
+---
 
-## Exemple minimal
+# Champs
 
-```json
-[
-  {
-    "uid": "weekly-reset-eu",
-    "title": "Réinitialisation hebdomadaire",
-    "start": "20260722",
-    "rrule": "FREQ=WEEKLY;BYDAY=WE",
-    "category": "Réinitialisation"
-  }
-]
+| Champ | Obligatoire | Description |
+|--------|:-----------:|-------------|
+| `id` | Oui | Identifiant unique de l'événement. |
+| `uid` | Oui | Identifiant unique utilisé dans le calendrier ICS. |
+| `title` | Oui | Nom de l'événement précédé d'un emoji. |
+| `start` | Oui | Date de début au format `YYYYMMDD`. |
+| `end` | Oui | Date de fin au format `YYYYMMDD`. |
+| `category` | Oui | Catégorie de l'événement. |
+| `location` | Non | Principal lieu de l'événement. |
+| `description` | Non | Courte description de l'événement. |
+| `url` | Non | Lien principal vers une source officielle. |
+| `sources` | Non | Liste des sources utilisées pour documenter l'événement. |
+
+---
+
+# Le champ `location`
+
+Le champ `location` doit rester volontairement court.
+
+Il représente le principal point de départ de l'événement.
+
+Trois cas sont utilisés.
+
+## Type A — Lieu unique
+
+```text
+Reflet-de-Lune
 ```
 
-## Exemple complet
+## Type B — Deux lieux principaux
 
-```json
-[
-  {
-    "id": "holiday-brewfest",
-    "uid": "holiday-brewfest-2026",
-    "title": "🍺 Fête des Brasseurs",
-    "start": "20260920",
-    "end": "20261007",
-    "category": [
-      "Fête mondiale",
-      "Fête des Brasseurs"
-    ],
-    "description": "Participez aux festivités brassicoles et obtenez des récompenses saisonnières.",
-    "location": "Dornogal, Forgefer et Orgrimmar",
-    "url": "https://worldofwarcraft.blizzard.com/",
-    "sources": [
-      "https://worldofwarcraft.blizzard.com/"
-    ]
-  }
-]
+```text
+Hurlevent ou Fossoyeuse
 ```
 
-## Champs
-
-| Champ | Type | Obligatoire | Usage |
-|---|---|:---:|---|
-| `uid` | chaîne | oui | Identifiant iCalendar unique et stable. |
-| `title` | chaîne | oui | Titre affiché dans le calendrier. |
-| `start` | chaîne | oui | Date de début au format `YYYYMMDD`. |
-| `category` | chaîne ou liste | oui | Catégorie(s) exportée(s) dans l'ICS. |
-| `end` | chaîne | non | Date de fin **exclusive**, format `YYYYMMDD`. |
-| `id` | chaîne | non | Identifiant interne stable, en minuscules sans espaces. |
-| `description` | chaîne | non | Description affichée dans le calendrier. |
-| `location` | chaîne | non | Lieu dans le jeu. |
-| `url` | chaîne HTTPS | non | Lien principal affiché dans le calendrier. |
-| `sources` | liste d'URL HTTPS | non | Sources de vérification, non exportées dans l'ICS. |
-| `rrule` | chaîne | non | Règle de récurrence iCalendar contenant `FREQ=`. |
-
-Aucun autre champ n'est accepté sans adaptation préalable du validateur et de la documentation.
-
-## Règles importantes
-
-### UID
-
-Le `uid` doit être unique dans tout le dépôt. Pour un événement daté, inclure l'année ou la date évite les collisions :
-
-```json
-"uid": "darkmoon-20260104"
+```text
+Forgefer ou Orgrimmar
 ```
 
-Pour une récurrence permanente, conserver un UID stable :
+## Type C — Événement réparti
 
-```json
-"uid": "weekly-reset-eu"
+```text
+Différents lieux d'Azeroth
 ```
 
-Un UID déjà publié ne doit pas être renommé sans nécessité, car les applications de calendrier pourraient créer un doublon.
+Le champ `location` ne doit pas devenir une liste exhaustive de villes.
 
-### Dates
+---
 
-Les dates sont écrites sans séparateur :
+# Le champ `description`
 
-```json
-"start": "20260920"
-```
+La description présente :
 
-`end` est exclusive. Pour un événement visible du 20 septembre au 6 octobre inclus :
+- ce qu'est l'événement ;
+- les activités principales ;
+- les principales récompenses.
 
-```json
-"start": "20260920",
-"end": "20261007"
-```
+Elle doit rester concise.
 
-Pour un événement d'une seule journée, `end` peut être omise.
+Le calendrier n'a pas vocation à remplacer un guide de jeu.
 
-### Sources
+---
 
-`sources` sert à documenter la vérification sans surcharger l'événement ICS. Privilégier Blizzard, puis Warcraft Wiki, Wowhead ou Icy Veins lorsque la source officielle ne suffit pas.
+# Le champ `sources`
 
-## Ajouter un événement
+Les sources sont classées selon l'ordre de priorité suivant :
 
-Assistant recommandé :
+1. Blizzard Entertainment
+2. Site officiel World of Warcraft
+3. Warcraft Wiki
 
-```bash
-python scripts/new_event.py nom_du_fichier.json
-```
+Les sites communautaires peuvent être utilisés uniquement lorsqu'une information n'est pas disponible dans les sources officielles.
 
-Ajout manuel : copier `templates/event.json`, compléter les champs et insérer l'objet dans la liste du fichier concerné.
+---
 
-## Vérification et génération
+# Conventions
+
+Le projet applique les conventions suivantes :
+
+- UTF-8
+- JSON valide
+- identifiants uniques
+- terminologie officielle Blizzard
+- descriptions homogènes
+- calendrier compatible RFC 5545
+
+---
+
+# Validation
+
+Avant toute génération du calendrier :
 
 ```bash
 python scripts/validate.py
+```
+
+Puis :
+
+```bash
 python scripts/build.py
 ```
+
+Les données invalides bloquent la génération du fichier ICS.
+
+---
+
+# Évolution du modèle
+
+Le modèle de données est volontairement stable.
+
+L'ajout d'un nouveau champ doit rester exceptionnel afin de préserver la compatibilité avec les scripts de validation et de génération.
