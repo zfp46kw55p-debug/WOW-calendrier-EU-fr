@@ -4,13 +4,13 @@
     "uid": "holiday_hallows_end_2026",
     "title": "🎃 Sanssaint",
     "start": "20261018",
-    "end": "20261102",
+    "end": "20261101",
     "category": "holiday",
-    "location": "Auberges d'Azeroth, Hurlevent et Orgrimmar",
-    "description": "Célébrez Sanssaint, récoltez des Friandises, affrontez le Cavalier sans tête et obtenez montures, mascottes, jouets, transmogrifications et hauts faits.",
-    "url": "https://news.blizzard.com/en-us/article/24242427/haul-in-ghoulish-delights-during-hallows-end",
+    "location": "Hurlevent ou Fossoyeuse",
+    "description": "Célébrez Sanssaint, affrontez le Cavalier sans tête, visitez les auberges d'Azeroth et récoltez des friandises pour obtenir des montures, mascottes, jouets, transmogrifications et hauts faits.",
+    "url": "https://worldofwarcraft.blizzard.com/fr-fr/",
     "sources": [
-      "https://news.blizzard.com/en-us/article/24242427/haul-in-ghoulish-delights-during-hallows-end",
+      "https://worldofwarcraft.blizzard.com/fr-fr/",
       "https://warcraft.wiki.gg/wiki/Hallow%27s_End"
     ]
   }
