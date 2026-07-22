@@ -1,0 +1,41 @@
+# Changelog
+
+Toutes les modifications notables de ce projet seront documentées dans ce fichier.
+
+Le format suit les recommandations de *Keep a Changelog*.
+
+Le projet respecte le versionnement sémantique.
+
+---
+
+## [1.0.0] - 2026-07-22
+
+### Ajout
+
+- Première version publique du calendrier.
+- Génération automatique du fichier ICS.
+- Validation automatique des données JSON.
+- Documentation complète du projet.
+- Politique éditoriale.
+- Guide de contribution.
+
+### Données
+
+- Événements saisonniers Retail Europe.
+- Micro-fêtes.
+- Événements bonus.
+- Marcheurs du temps.
+- Événements mondiaux.
+
+### Documentation
+
+- README
+- CONTRIBUTING
+- Data Format
+- Editorial Policy
+
+### Technique
+
+- Scripts de validation.
+- Génération ICS conforme à la RFC 5545.
+- Workflow GitHub Actions.
