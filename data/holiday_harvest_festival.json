@@ -1,0 +1,17 @@
+[
+  {
+    "id": "holiday_harvest_festival",
+    "uid": "holiday_harvest_festival_2026",
+    "title": "🌾 Fête des moissons",
+    "start": "20260925",
+    "end": "20261002",
+    "category": "holiday",
+    "location": "Forgefer ou Orgrimmar",
+    "description": "Rendez hommage aux héros tombés au combat, accomplissez la quête « En l'honneur d'un héros », partagez les festins des moissons et obtenez des récompenses commémoratives.",
+    "url": "https://worldofwarcraft.blizzard.com/fr-fr/news/22483126/la-fete-des-moissons-a-commence",
+    "sources": [
+      "https://worldofwarcraft.blizzard.com/fr-fr/news/22483126/la-fete-des-moissons-a-commence",
+      "https://warcraft.wiki.gg/wiki/Harvest_Festival"
+    ]
+  }
+]
