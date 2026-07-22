@@ -2,15 +2,15 @@
   {
     "id": "holiday_pilgrims_bounty",
     "uid": "holiday_pilgrims_bounty_2026",
-    "title": "🦃 Bienfaits du pèlerin",
-    "start": "20261122",
+    "title": "🍗 Fête des Bienfaiteurs",
+    "start": "20261123",
     "end": "20261130",
     "category": "holiday",
-    "location": "Capitales de l'Alliance et de la Horde",
-    "description": "Partagez un festin, perfectionnez votre cuisine, participez aux batailles de nourriture et obtenez mascottes, récompenses et hauts faits.",
-    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22770321/join-the-feast-during-pilgrims-bounty",
+    "location": "Capitales d'Azeroth",
+    "description": "Prenez part à la Fête des Bienfaiteurs, partagez des repas, accomplissez des quêtes et obtenez des mascottes, vêtements festifs, recettes de cuisine et hauts faits.",
+    "url": "https://worldofwarcraft.blizzard.com/fr-fr/",
     "sources": [
-      "https://worldofwarcraft.blizzard.com/en-us/news/22770321/join-the-feast-during-pilgrims-bounty",
+      "https://worldofwarcraft.blizzard.com/fr-fr/",
       "https://warcraft.wiki.gg/wiki/Pilgrim%27s_Bounty"
     ]
   }
