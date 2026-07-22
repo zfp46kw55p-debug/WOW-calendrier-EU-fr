@@ -6,12 +6,12 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from pathlib import Path
 
-from event_data import DATA_DIR, DataError, ROOT, validate_event
+from event_data import DATA_DIR, ROOT, validate_event
 
 
 def ask(label: str, required: bool = False) -> str:
+    """Demande une valeur à l'utilisateur."""
     while True:
         value = input(f"{label}{' *' if required else ''} : ").strip()
         if value or not required:
@@ -41,10 +41,15 @@ def main() -> int:
     event: dict[str, object] = {
         "uid": ask("UID unique", required=True),
         "title": ask("Titre", required=True),
-        "start": ask("Début (YYYYMMDD)", required=True),
+        "start": ask(
+            "Début (YYYYMMDD ou YYYYMMDDTHHMMSSZ en UTC)",
+            required=True,
+        ),
     }
 
-    end = ask("Fin exclusive (YYYYMMDD, laisser vide pour 1 jour)")
+    end = ask(
+        "Fin exclusive (même format que le début ; laisser vide si absente)"
+    )
     if end:
         event["end"] = end
 
@@ -54,7 +59,7 @@ def main() -> int:
         ("description", "Description"),
         ("location", "Lieu"),
         ("url", "URL affichée"),
-        ("rrule", "Règle RRULE"),
+        ("rrule", "Règle RRULE sans le préfixe RRULE:"),
     ):
         value = ask(label)
         if value:
@@ -85,7 +90,12 @@ def main() -> int:
         data = []
 
     data.append(event)
-    data.sort(key=lambda item: (item.get("start", ""), item.get("title", "").casefold()))
+    data.sort(
+        key=lambda item: (
+            str(item.get("start", "")),
+            str(item.get("title", "")).casefold(),
+        )
+    )
     target.write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

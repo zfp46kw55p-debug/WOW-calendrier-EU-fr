@@ -5,10 +5,17 @@ from __future__ import annotations
 
 import sys
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Iterable
 
-from event_data import DataError, ROOT, categories, load_config, load_events, validate_event
+from event_data import (
+    DataError,
+    ROOT,
+    categories,
+    is_datetime_value,
+    load_config,
+    load_events,
+    validate_event,
+)
 
 
 def escape_ics(value: object) -> str:
@@ -48,18 +55,28 @@ def fold_line(line: str, limit: int = 75) -> list[str]:
 
 
 def append(lines: list[str], line: str) -> None:
+    """Ajoute une ligne ICS en appliquant le pliage RFC 5545."""
     lines.extend(fold_line(line))
 
 
+def append_temporal(lines: list[str], property_name: str, value: object) -> None:
+    """Ajoute DTSTART ou DTEND selon qu'il s'agit d'une date ou d'un horaire UTC."""
+    if is_datetime_value(value):
+        append(lines, f"{property_name}:{value}")
+    else:
+        append(lines, f"{property_name};VALUE=DATE:{value}")
+
+
 def event_lines(event: dict[str, object], stamp: str) -> Iterable[str]:
+    """Construit les lignes iCalendar d'un événement validé."""
     lines: list[str] = ["BEGIN:VEVENT"]
     append(lines, f"UID:{escape_ics(event['uid'])}")
     append(lines, f"DTSTAMP:{stamp}")
     append(lines, f"SUMMARY:{escape_ics(event['title'])}")
-    append(lines, f"DTSTART;VALUE=DATE:{event['start']}")
+    append_temporal(lines, "DTSTART", event["start"])
 
     if "end" in event:
-        append(lines, f"DTEND;VALUE=DATE:{event['end']}")
+        append_temporal(lines, "DTEND", event["end"])
     if "rrule" in event:
         append(lines, f"RRULE:{event['rrule']}")
     if "description" in event:
@@ -91,7 +108,7 @@ def main() -> int:
 
         events = sorted(
             (item.data for item in loaded),
-            key=lambda event: (event["start"], event["title"].casefold()),
+            key=lambda event: (str(event["start"]), str(event["title"]).casefold()),
         )
 
         stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")

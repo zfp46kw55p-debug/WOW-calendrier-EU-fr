@@ -16,6 +16,10 @@ DATA_DIR = ROOT / "data"
 CONFIG_FILE = ROOT / "config.json"
 
 DATE_FORMAT = "%Y%m%d"
+DATETIME_UTC_FORMAT = "%Y%m%dT%H%M%SZ"
+DATE_PATTERN = re.compile(r"^\d{8}$")
+DATETIME_UTC_PATTERN = re.compile(r"^\d{8}T\d{6}Z$")
+
 REQUIRED_FIELDS = ("uid", "title", "start", "category")
 ALLOWED_FIELDS = {
     "id",
@@ -45,6 +49,14 @@ class LoadedEvent:
     file: Path
     number: int
     data: dict[str, Any]
+
+
+@dataclass(frozen=True)
+class ParsedTemporal:
+    """Valeur temporelle analysée avec son type iCalendar."""
+
+    value: datetime
+    has_time: bool
 
 
 def json_files(data_dir: Path = DATA_DIR) -> list[Path]:
@@ -126,14 +138,50 @@ def load_events(data_dir: Path = DATA_DIR) -> list[LoadedEvent]:
     return loaded
 
 
-def parse_date(value: Any, field: str) -> datetime:
-    """Convertit une date YYYYMMDD ou lève une erreur lisible."""
-    if not isinstance(value, str) or len(value) != 8 or not value.isdigit():
-        raise DataError(f'Le champ "{field}" doit respecter le format YYYYMMDD.')
+def parse_temporal(value: Any, field: str) -> ParsedTemporal:
+    """Convertit une date ou une date-heure UTC et indique son type.
+
+    Formats acceptés :
+    - YYYYMMDD pour un événement sur une journée entière ;
+    - YYYYMMDDTHHMMSSZ pour un événement horaire exprimé en UTC.
+    """
+    if not isinstance(value, str):
+        raise DataError(
+            f'Le champ "{field}" doit respecter le format YYYYMMDD '
+            "ou YYYYMMDDTHHMMSSZ."
+        )
+
+    if DATE_PATTERN.fullmatch(value):
+        format_string = DATE_FORMAT
+        has_time = False
+    elif DATETIME_UTC_PATTERN.fullmatch(value):
+        format_string = DATETIME_UTC_FORMAT
+        has_time = True
+    else:
+        raise DataError(
+            f'Le champ "{field}" doit respecter le format YYYYMMDD '
+            "ou YYYYMMDDTHHMMSSZ."
+        )
+
     try:
-        return datetime.strptime(value, DATE_FORMAT)
+        parsed = datetime.strptime(value, format_string)
     except ValueError as exc:
         raise DataError(f'Date invalide dans le champ "{field}" : {value!r}.') from exc
+
+    return ParsedTemporal(value=parsed, has_time=has_time)
+
+
+def parse_date(value: Any, field: str) -> datetime:
+    """Convertit une date ou date-heure valide en ``datetime``.
+
+    Cette fonction est conservée pour compatibilité avec les autres scripts.
+    """
+    return parse_temporal(value, field).value
+
+
+def is_datetime_value(value: Any) -> bool:
+    """Indique si la valeur utilise le format UTC YYYYMMDDTHHMMSSZ."""
+    return isinstance(value, str) and bool(DATETIME_UTC_PATTERN.fullmatch(value))
 
 
 def is_https_url(value: Any) -> bool:
@@ -182,22 +230,32 @@ def validate_event(event: dict[str, Any]) -> list[str]:
     if isinstance(event_id, str) and event_id and not ID_PATTERN.fullmatch(event_id):
         errors.append('Le champ "id" doit être en minuscules, sans espaces (kebab-case ou snake_case).')
 
-    start = end = None
+    start: ParsedTemporal | None = None
+    end: ParsedTemporal | None = None
+
     if "start" in event:
         try:
-            start = parse_date(event["start"], "start")
+            start = parse_temporal(event["start"], "start")
         except DataError as exc:
             errors.append(str(exc))
+
     if "end" in event:
         try:
-            end = parse_date(event["end"], "end")
+            end = parse_temporal(event["end"], "end")
         except DataError as exc:
             errors.append(str(exc))
-    if start is not None and end is not None and end <= start:
-        errors.append(
-            'La date "end" doit être postérieure à "start". '
-            "Dans iCalendar, DTEND est exclusif."
-        )
+
+    if start is not None and end is not None:
+        if start.has_time != end.has_time:
+            errors.append(
+                'Les champs "start" et "end" doivent utiliser le même format : '
+                "tous deux YYYYMMDD ou tous deux YYYYMMDDTHHMMSSZ."
+            )
+        elif end.value <= start.value:
+            errors.append(
+                'La date "end" doit être postérieure à "start". '
+                "Dans iCalendar, DTEND est exclusif."
+            )
 
     if "category" in event:
         try:
@@ -218,8 +276,14 @@ def validate_event(event: dict[str, Any]) -> list[str]:
                     errors.append(f'La source no {index} doit être une URL HTTPS absolue.')
 
     rrule = event.get("rrule")
-    if isinstance(rrule, str) and rrule and "FREQ=" not in rrule.upper():
-        errors.append('Le champ "rrule" doit contenir une règle incluant "FREQ=".')
+    if isinstance(rrule, str) and rrule:
+        normalized_rrule = rrule.upper()
+        if normalized_rrule.startswith("RRULE:"):
+            errors.append(
+                'Le champ "rrule" doit contenir uniquement la règle, sans le préfixe "RRULE:".'
+            )
+        elif "FREQ=" not in normalized_rrule:
+            errors.append('Le champ "rrule" doit contenir une règle incluant "FREQ=".')
 
     return errors
 
