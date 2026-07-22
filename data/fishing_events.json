@@ -1,0 +1,47 @@
+[
+  {
+    "id": "fishing_stranglethorn_fishing_extravaganza",
+    "uid": "fishing_stranglethorn_fishing_extravaganza",
+    "title": "🎣 Concours de pêche de Strangleronce",
+    "category": "fishing_event",
+    "location": "Baie-du-Butin",
+    "description": "Participez au Concours de pêche de Strangleronce, capturez les poissons recherchés et affrontez les autres pêcheurs d'Azeroth pour remporter des récompenses.",
+    "start": "20260104T140000Z",
+    "end": "20260104T160000Z",
+    "rrule": "FREQ=WEEKLY;BYDAY=SU",
+    "url": "https://warcraft.wiki.gg/wiki/Stranglethorn_Fishing_Extravaganza",
+    "sources": [
+      "https://warcraft.wiki.gg/wiki/Stranglethorn_Fishing_Extravaganza"
+    ]
+  },
+  {
+    "id": "fishing_kaluak_fishing_derby",
+    "uid": "fishing_kaluak_fishing_derby",
+    "title": "🎣 Derby de pêche kaluak",
+    "category": "fishing_event",
+    "location": "Rasganorte",
+    "description": "Participez au Derby de pêche kaluak, capturez les poissons recherchés et remportez les récompenses proposées par les Kalu'aks.",
+    "start": "20260103T140000Z",
+    "end": "20260103T150000Z",
+    "rrule": "FREQ=WEEKLY;BYDAY=SA",
+    "url": "https://warcraft.wiki.gg/wiki/Kalu%27ak_Fishing_Derby",
+    "sources": [
+      "https://warcraft.wiki.gg/wiki/Kalu%27ak_Fishing_Derby"
+    ]
+  },
+  {
+    "id": "fishing_mereldar_fishing_derby",
+    "uid": "fishing_mereldar_fishing_derby",
+    "title": "🎣 Derby de pêche de Mereldar",
+    "category": "fishing_event",
+    "location": "Mereldar",
+    "description": "Participez au Derby de pêche de Mereldar, capturez les prises demandées et échangez vos marques du derby contre des récompenses.",
+    "start": "20260103T190000Z",
+    "end": "20260103T200000Z",
+    "rrule": "FREQ=WEEKLY;BYDAY=SA",
+    "url": "https://warcraft.wiki.gg/wiki/Hallowfall_Fishing_Derby",
+    "sources": [
+      "https://warcraft.wiki.gg/wiki/Hallowfall_Fishing_Derby"
+    ]
+  }
+]
