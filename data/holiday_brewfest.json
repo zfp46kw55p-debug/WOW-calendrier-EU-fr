@@ -6,11 +6,11 @@
     "start": "20260920",
     "end": "20261007",
     "category": "holiday",
-    "location": "Dornogal, Forgefer et Orgrimmar",
-    "description": "Participez aux festivités brassicoles, affrontez Coren Navrebière, récoltez des Jetons de la fête des Brasseurs et obtenez montures, mascottes, jouets et hauts faits.",
-    "url": "https://news.blizzard.com/en-us/article/23999608/get-a-keg-up-brewfest-is-here",
+    "location": "Forgefer ou Orgrimmar",
+    "description": "Participez à la Fête des Brasseurs, accomplissez des quêtes, affrontez Coren Navrebière et récoltez des jetons de la fête des Brasseurs pour obtenir des montures, mascottes, jouets, transmogrifications et hauts faits.",
+    "url": "https://worldofwarcraft.blizzard.com/fr-fr/",
     "sources": [
-      "https://news.blizzard.com/en-us/article/23999608/get-a-keg-up-brewfest-is-here",
+      "https://worldofwarcraft.blizzard.com/fr-fr/",
       "https://warcraft.wiki.gg/wiki/Brewfest"
     ]
   }
