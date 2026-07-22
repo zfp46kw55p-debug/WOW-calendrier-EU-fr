@@ -1,86 +1,165 @@
 # WoW Calendrier EU FR
 
-Calendrier **iCalendar (`.ics`)** des événements de **World of Warcraft Retail – Europe**, en français.
+Un calendrier **iCalendar (.ics)** des événements de **World of Warcraft Retail Europe**, entièrement en français.
 
-Le dépôt est volontairement simple : les événements sont des objets JSON, le validateur contrôle les données et le générateur produit `wow-eu.ics`. Ajouter ou corriger un événement ne demande aucune modification du code Python.
+Le projet fournit un calendrier prêt à importer dans Outlook, Google Calendar, Apple Calendar, Thunderbird et toute application compatible avec le format **iCalendar (RFC 5545)**.
 
-## Utilisation rapide
+Toutes les données sont maintenues dans des fichiers JSON simples, validées automatiquement puis converties en un calendrier ICS unique.
 
-Prérequis : **Python 3.10 ou supérieur**, sans dépendance externe.
+---
 
-```bash
-python scripts/validate.py
-python scripts/build.py
+## Pourquoi ce projet ?
+
+Ce projet est né du constat qu'il n'existait pas de calendrier francophone réunissant les principaux événements de **World of Warcraft Retail Europe** dans un format :
+
+- simple à utiliser ;
+- documenté ;
+- facilement maintenable ;
+- basé sur des sources officielles.
+
+Contrairement à un guide de jeu, ce calendrier fournit uniquement les informations essentielles :
+
+- le nom de l'événement ;
+- sa période ;
+- son principal lieu de déroulement ;
+- une courte description ;
+- un lien vers les sources officielles.
+
+---
+
+# Fonctionnalités
+
+- calendrier iCalendar (.ics)
+- événements Retail Europe
+- entièrement en français
+- terminologie officielle Blizzard
+- descriptions courtes et homogènes
+- génération automatique
+- validation automatique des données
+- structure entièrement basée sur des fichiers JSON
+
+---
+
+# Compatibilité
+
+Le calendrier est compatible avec toute application prenant en charge le format iCalendar, notamment :
+
+- Microsoft Outlook
+- Google Calendar
+- Apple Calendar
+- Mozilla Thunderbird
+- toute application compatible RFC 5545
+
+---
+
+# Structure du projet
+
 ```
-
-Le calendrier généré se trouve à la racine du dépôt :
-
-```text
-wow-eu.ics
-```
-
-## Ajouter un événement
-
-La méthode la plus simple est l'assistant interactif :
-
-```bash
-python scripts/new_event.py micro_holidays.json
-```
-
-Il demande les informations utiles, ajoute l'objet au bon fichier et le trie. Il reste ensuite à lancer :
-
-```bash
-python scripts/validate.py
-python scripts/build.py
-```
-
-Il est également possible de copier `templates/event.json` et d'ajouter manuellement l'objet dans un fichier de `data/`.
-
-## Mettre à jour un événement
-
-1. Ouvrir le fichier JSON concerné dans `data/`.
-2. Corriger les dates, le texte ou les sources.
-3. Ne jamais changer un `uid` déjà publié, sauf nécessité absolue.
-4. Exécuter le validateur puis le générateur.
-
-Les dates utilisent le format `YYYYMMDD`. La date `end` est **exclusive** : un événement d'une seule journée commençant le 1er janvier se termine donc le 2 janvier.
-
-## Structure
-
-```text
 .
-├── config.json                 # Nom, URL et réglages du calendrier
-├── data/                       # Source de vérité : événements JSON
+├── data/
+│   ├── holiday_*.json
+│   ├── micro_holiday_*.json
+│   ├── bonus_event_*.json
+│   └── ...
+│
 ├── docs/
+│   ├── editorial-policy.md
 │   ├── CONTRIBUTING.md
-│   ├── data-format.md
-│   └── editorial-policy.md
+│   └── data-format.md
+│
 ├── scripts/
-│   ├── build.py                # Génération ICS
-│   ├── event_data.py           # Chargement et règles communes
-│   ├── new_event.py            # Assistant d'ajout
-│   └── validate.py             # Contrôles avant génération
-├── templates/
-│   └── event.json              # Modèle à copier
+│   ├── build.py
+│   ├── validate.py
+│   ├── event_data.py
+│   └── new_event.py
+│
 └── wow-eu.ics
 ```
 
-Le chargeur lit automatiquement tous les fichiers `*.json` de `data/`, y compris dans de futurs sous-dossiers. Les noms commençant par `_` sont ignorés.
+---
 
-## Documentation
+# Génération
 
-- [Format des données](docs/data-format.md)
-- [Politique éditoriale](docs/editorial-policy.md)
-- [Guide de contribution](docs/CONTRIBUTING.md)
+Validation des données :
 
-## Principes
+```bash
+python scripts/validate.py
+```
 
-- Données simples et lisibles.
-- Aucun cas particulier d'événement dans le code.
-- Validation avant chaque génération.
-- Sources Blizzard privilégiées, puis sources communautaires reconnues.
-- Bibliothèque standard Python uniquement.
+Génération du calendrier :
 
-## Licence
+```bash
+python scripts/build.py
+```
 
-Le dépôt ne contient actuellement pas encore de fichier de licence. Il convient d'en choisir une avant une publication formelle.
+Le fichier généré est :
+
+```
+wow-eu.ics
+```
+
+---
+
+# Qualité des données
+
+Toutes les données sont vérifiées avant leur intégration.
+
+Les principales règles sont :
+
+- identifiants uniques ;
+- UID uniques ;
+- dates valides ;
+- structure JSON homogène ;
+- terminologie officielle Blizzard lorsque disponible ;
+- descriptions concises ;
+- sources documentées.
+
+Les conventions éditoriales sont détaillées dans :
+
+```
+docs/editorial-policy.md
+```
+
+---
+
+# Sources
+
+Les informations sont vérifiées en privilégiant les sources suivantes :
+
+1. Blizzard Entertainment
+2. Site officiel World of Warcraft
+3. Warcraft Wiki
+
+Des sources complémentaires peuvent être utilisées lorsqu'une information n'est pas disponible dans les publications officielles.
+
+---
+
+# Contribution
+
+Les contributions sont les bienvenues.
+
+Avant toute modification, merci de consulter :
+
+- `docs/CONTRIBUTING.md`
+- `docs/editorial-policy.md`
+- `docs/data-format.md`
+
+Les Pull Requests sont automatiquement validées avant la génération du calendrier.
+
+---
+
+# Philosophie
+
+Le calendrier a pour objectif de répondre rapidement aux questions suivantes :
+
+- Quand a lieu l'événement ?
+- Où commence-t-il ?
+- De quoi s'agit-il ?
+
+Il n'a pas vocation à remplacer un guide de jeu.
+
+---
+
+# Licence
+
+Voir le fichier `LICENSE`.
