@@ -1,0 +1,16 @@
+[
+  {
+    "id": "holiday_day_of_the_dead",
+    "uid": "holiday_day_of_the_dead_2026",
+    "title": "💀 Jour des morts",
+    "start": "20261101",
+    "end": "20261104",
+    "category": "holiday",
+    "location": "Cimetières des capitales",
+    "description": "Honorez les disparus d'Azeroth en célébrant le Jour des morts. Dansez avec Catrina, participez aux festivités et obtenez des récompenses, jouets et hauts faits exclusifs.",
+    "url": "https://news.blizzard.com/fr-fr/article/22646756/celebrate-with-the-dead-during-day-of-the-dead",
+    "sources": [
+      "https://news.blizzard.com/fr-fr/article/22646756/celebrate-with-the-dead-during-day-of-the-dead"
+    ]
+  }
+]
