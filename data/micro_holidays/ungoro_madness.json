@@ -2,15 +2,16 @@
   {
     "id": "micro_holiday_ungoro_madness",
     "uid": "micro_holiday_ungoro_madness_2026",
-    "title": "🦖 La folie d'Un'Goro",
+    "title": "🦖 Paléon'Goro",
     "start": "20260317",
     "end": "20260320",
     "category": "micro_holiday",
-    "location": "Cratère d'Un'Goro",
-    "description": "Affrontez les dinosaures déchaînés du Cratère d'Un'Goro durant cette micro-fête. Terrassez les créatures les plus redoutables pour obtenir de puissantes améliorations temporaires.",
-    "url": "https://worldofwarcraft.blizzard.com/en-us/news/23823433",
+    "location": "Marais de Golakka, Cratère d'Un'Goro",
+    "description": "Affrontez les créatures préhistoriques qui envahissent le Cratère d'Un'Goro durant Paléon'Goro. Triomphez des puissants dinosaures et profitez des étonnantes transformations qu'ils confèrent.",
+    "url": "https://www.wowhead.com/fr/event=638/ungoro-madness",
     "sources": [
-      "https://worldofwarcraft.blizzard.com/en-us/news/23823433"
+      "https://www.wowhead.com/fr/event=638/ungoro-madness",
+      "https://worldofwarcraft.blizzard.com/fr-fr/"
     ]
   }
 ]
