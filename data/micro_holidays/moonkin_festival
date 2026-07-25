@@ -1,0 +1,14 @@
+{
+  "id": "micro_holiday_moonkin_festival",
+  "uid": "micro_holiday_moonkin_festival_2026",
+  "title": "🦉 Festival des Séléniens",
+  "start": "20261112",
+  "end": "20261113",
+  "category": "micro_holiday",
+  "location": "Reflet-de-Lune",
+  "description": "Rejoignez les druides et les Séléniens à Reflet-de-Lune pour célébrer cette micro-fête. Dansez, profitez des festivités et partagez un moment convivial au cœur de l'un des lieux les plus emblématiques de la tradition druidique.",
+  "url": "https://worldofwarcraft.blizzard.com/",
+  "sources": [
+    "https://worldofwarcraft.blizzard.com/"
+  ]
+}
