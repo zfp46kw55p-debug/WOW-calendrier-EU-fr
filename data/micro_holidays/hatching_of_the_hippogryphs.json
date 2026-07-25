@@ -6,11 +6,12 @@
     "start": "20260223",
     "end": "20260224",
     "category": "micro_holiday",
-    "location": "Féralas",
-    "description": "Assistez à l'éclosion annuelle des hippogriffes dans les Hautes-terres de Pennelune. Faites éclore un œuf et repartez accompagné d'un jeune hippogriffe pour une durée limitée.",
-    "url": "https://worldofwarcraft.blizzard.com/en-us/news/24056986",
+    "location": "Hautes-terres de Pennelune, Féralas",
+    "description": "Assistez à l'éclosion annuelle des hippogriffes dans les Hautes-terres de Pennelune. Prenez soin d'un jeune hippogriffe jusqu'à son envol et découvrez les traditions des gardiens de la région.",
+    "url": "https://www.wowhead.com/fr/event=634/hatching-of-the-hippogryphs",
     "sources": [
-      "https://worldofwarcraft.blizzard.com/en-us/news/24056986"
+      "https://www.wowhead.com/fr/event=634/hatching-of-the-hippogryphs",
+      "https://worldofwarcraft.blizzard.com/fr-fr/"
     ]
   }
 ]
