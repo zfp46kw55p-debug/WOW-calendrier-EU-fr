@@ -6,11 +6,12 @@
     "start": "20260121",
     "end": "20260124",
     "category": "micro_holiday",
-    "location": "Silithus",
-    "description": "Revivez l'ouverture des portes d'Ahn'Qiraj en participant à l'effort de guerre de votre faction. Contribuez à la victoire de votre camp et hissez sa bannière au-dessus des portes jusqu'à l'année suivante.",
-    "url": "https://worldofwarcraft.blizzard.com/en-us/news/23823433",
+    "location": "Ancien Silithus",
+    "description": "Commémorez l'ouverture des portes d'Ahn'Qiraj en prenant part à l'effort de guerre. Défendez votre faction et participez à cette reconstitution annuelle d'un événement marquant de l'histoire d'Azeroth.",
+    "url": "https://www.wowhead.com/fr/event=620/call-of-the-scarab",
     "sources": [
-      "https://worldofwarcraft.blizzard.com/en-us/news/23823433"
+      "https://www.wowhead.com/fr/event=620/call-of-the-scarab",
+      "https://worldofwarcraft.blizzard.com/fr-fr/"
     ]
   }
 ]
