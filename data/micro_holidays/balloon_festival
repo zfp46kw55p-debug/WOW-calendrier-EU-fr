@@ -1,0 +1,14 @@
+{
+  "id": "micro_holiday_balloon_festival",
+  "uid": "micro_holiday_balloon_festival_2026",
+  "title": "🎈 Festival des montgolfières",
+  "start": "20260510",
+  "end": "20260513",
+  "category": "micro_holiday",
+  "location": "Différents lieux d'Azeroth",
+  "description": "Prenez place à bord d'une montgolfière et laissez-vous porter au-dessus d'Azeroth en compagnie de célèbres personnages. Cette micro-fête est l'occasion de découvrir le monde sous un autre angle et de profiter d'un voyage paisible entre plusieurs régions.",
+  "url": "https://worldofwarcraft.blizzard.com/",
+  "sources": [
+    "https://worldofwarcraft.blizzard.com/"
+  ]
+}
