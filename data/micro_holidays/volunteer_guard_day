@@ -1,0 +1,14 @@
+{
+  "id": "micro_holiday_volunteer_guard_day",
+  "uid": "micro_holiday_volunteer_guard_day_2026",
+  "title": "🛡️ Journée des gardes bénévoles",
+  "start": "20260428",
+  "end": "20260429",
+  "category": "micro_holiday",
+  "location": "Capitales de l'Alliance ou de la Horde",
+  "description": "Prenez la place d'un garde de capitale le temps d'une journée. Surveillez les rues, saluez les aventuriers et découvrez le quotidien des gardes qui veillent sur les principales cités d'Azeroth.",
+  "url": "https://worldofwarcraft.blizzard.com/",
+  "sources": [
+    "https://worldofwarcraft.blizzard.com/"
+  ]
+}
