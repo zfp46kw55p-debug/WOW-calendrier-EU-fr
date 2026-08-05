@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "holiday_trial_of_style",
+    "uid": "holiday_trial_of_style_2026",
+    "title": "👗 Épreuve du style",
+    "category": "holiday",
+    "location": "Transmogrifieurs des principales villes d'Azeroth",
+    "description": "Participez à l'Épreuve du style et mettez vos talents de transmogrification à l'honneur lors d'un concours amical. Présentez vos plus belles tenues et remportez des récompenses exclusives.",
+    "url": "https://www.wowhead.com/fr/guide/transmogrification/trial-of-style-event",
+    "sources": [
+      "https://www.wowhead.com/fr/guide/transmogrification/trial-of-style-event"
+    ]
+  }
+]
